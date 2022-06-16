@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String IT_JUST_WORKS = "It Just Works";
     public static final String HIT = "Hit";
+    public static final String IAM_MASTER = "Now I Am The Master";
     public static final String KEY_SOUNDBOARD_DATA = "soundboard_data";
     public static final String DEFAULT_SOUNDBOARD_DATA = "{}";
     public static final int REQUEST_CODE = 696;
@@ -151,6 +152,12 @@ public class MainActivity extends AppCompatActivity {
         if (ijwPath == null || !new File(ijwPath).exists()) {
             createIJWSampleTempFile();
         }
+
+        // testing adding a new sound - Pat
+        String iamMasterPath = soundboardData.get(IAM_MASTER);
+        if (ijwPath == null || !new File(iamMasterPath).exists()) {
+            createiamMasterSampleTempFile();
+        }
     }
 
     private void createIJWSampleTempFile() {
@@ -177,6 +184,25 @@ public class MainActivity extends AppCompatActivity {
             File file = File.createTempFile("hit", "wav", getCacheDir());
             try (FileOutputStream out = new FileOutputStream(file)) {
                 InputStream in = getResources().openRawResource(R.raw.hit);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(HIT, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+
+    private void createiamMasterSampleTempFile() {
+        try {
+            File file = File.createTempFile("iamMaster", "wav", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.iamMaster);
                 ByteStreams.copy(in, out);
                 out.flush();
                 in.close();
