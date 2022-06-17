@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
 
         // testing adding a new sound - Pat
         String iamMasterPath = soundboardData.get(IAM_MASTER);
-        if (ijwPath == null || !new File(iamMasterPath).exists()) {
+        if (iamMasterPath == null || !new File(iamMasterPath).exists()) {
             createiamMasterSampleTempFile();
         }
     }
@@ -200,14 +200,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void createiamMasterSampleTempFile() {
         try {
-            File file = File.createTempFile("iamMaster", "wav", getCacheDir());
+            File file = File.createTempFile("iammaster", "wav", getCacheDir());
             try (FileOutputStream out = new FileOutputStream(file)) {
-                InputStream in = getResources().openRawResource(R.raw.iamMaster);
+                InputStream in = getResources().openRawResource(R.raw.iammaster);
                 ByteStreams.copy(in, out);
                 out.flush();
                 in.close();
 
-                soundboardData.put(HIT, file.getPath());
+                soundboardData.put(IAM_MASTER, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
