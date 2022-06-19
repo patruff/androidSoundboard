@@ -10,4 +10,52 @@
         android:id="@+id/findSounds"
         android:icon="@drawable/ic_help_outline_white_24dp"
         android:title="@string/find_sounds" />
+
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/ic_icon_audio"
+        android:title="Item 1"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item2"
+        android:title="Item 2"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item3"
+        android:title="H-O"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item
+                android:id="@+id/subitem1"
+                android:title="H" />
+
+            <item
+                android:id="@+id/subitem2"
+                android:title="I" />
+            <item
+                android:id="@+id/subitem3"
+                android:title="J" />
+            <item
+                android:id="@+id/subitem4"
+                android:title="K" />
+            <item
+                android:id="@+id/subitem5"
+                android:title="L" />
+            <item
+                android:id="@+id/subitem6"
+                android:title="M" />
+            <item
+                android:id="@+id/subitem7"
+                android:title="N" />
+            <item
+                android:id="@+id/subitem8"
+                android:title="O" />
+
+        </menu>
+
+    </item>
 </menu>

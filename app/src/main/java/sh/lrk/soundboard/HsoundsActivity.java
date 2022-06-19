@@ -1,5 +1,15 @@
 package sh.lrk.soundboard;
 
+import static sh.lrk.soundboard.MainActivity.HIT;
+import static sh.lrk.soundboard.MainActivity.IT_JUST_WORKS;
+import static sh.lrk.soundboard.settings.SettingsActivity.DEFAULT_NUM_COLS;
+import static sh.lrk.soundboard.settings.SettingsActivity.KEY_NUM_COLS;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -15,14 +25,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.GridView;
-
-// imports for menu
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -39,16 +42,12 @@ import java.util.Set;
 
 import sh.lrk.soundboard.settings.SettingsActivity;
 
-import static sh.lrk.soundboard.settings.SettingsActivity.DEFAULT_NUM_COLS;
-import static sh.lrk.soundboard.settings.SettingsActivity.KEY_NUM_COLS;
+public class HsoundsActivity extends AppCompatActivity {
 
-public class MainActivity extends AppCompatActivity {
+    // static values
+    private static final String TAG = HsoundsActivity.class.getCanonicalName();
 
-    private static final String TAG = MainActivity.class.getCanonicalName();
-
-    public static final String IT_JUST_WORKS = "It Just Works";
-    public static final String HIT = "Hit";
-    public static final String IAM_MASTER = "Now I Am The Master";
+    public static final String HANS = "hans";
     public static final String KEY_SOUNDBOARD_DATA = "soundboard_data";
     public static final String DEFAULT_SOUNDBOARD_DATA = "{}";
     public static final int REQUEST_CODE = 696;
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_hsounds);
 
         gridView = findViewById(R.id.sampleListView);
         FloatingActionButton fab = findViewById(R.id.addBtn);
@@ -83,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     getText(R.string.select_an_audio_file)), REQUEST_CODE);
         });
 
-        addInititalSamples();
+        addInitialSamples();
         initAdapter();
         gridView.setAdapter(adapter);
 
@@ -115,86 +114,83 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_menu, menu);
+        //inflater.inflate(R.menu.main_menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
-        if (itemId == R.id.settings) {
-            startActivity(new Intent(this, SettingsActivity.class));
-            return true;
-        } else if(itemId == R.id.findSounds) {
-            new AlertDialog.Builder(this)
-                    .setNeutralButton(R.string.okay, (d,w) -> d.dismiss())
-                    .setTitle(R.string.diag_title_find_sounds)
-                    .setMessage(R.string.diag_message_find_sounds)
-                    .setIcon(R.drawable.ic_help_outline_white_24dp)
-                    .create().show();
-        }
-        // return false;
-
-        switch (item.getItemId()) {
-            case R.id.item1:
-                Toast.makeText(this, "Item 1 selected", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.item2:
-                Toast.makeText(this, "Item 2 selected", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.item3:
-                Toast.makeText(this, "Item 3 selected", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.subitem1:
-                //Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
-                Toast.makeText(MainActivity.this, "H Selected", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(MainActivity.this,HsoundsActivity.class));//start activity
-                return true;
-            case R.id.subitem2:
-                Toast.makeText(this, "Sub Item 2 selected", Toast.LENGTH_SHORT).show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
+        return true;
+//        if (itemId == R.id.settings) {
+//            startActivity(new Intent(this, SettingsActivity.class));
+//            return true;
+//        } else if (itemId == R.id.findSounds) {
+//            new AlertDialog.Builder(this)
+//                    .setNeutralButton(R.string.okay, (d, w) -> d.dismiss())
+//                    .setTitle(R.string.diag_title_find_sounds)
+//                    .setMessage(R.string.diag_message_find_sounds)
+//                    .setIcon(R.drawable.ic_help_outline_white_24dp)
+//                    .create().show();
+//        }
+//        // return false;
+//
+//        switch (item.getItemId()) {
+//            case R.id.item1:
+//                Toast.makeText(this, "Item 1 selected", Toast.LENGTH_SHORT).show();
+//                return true;
+//            case R.id.item2:
+//                Toast.makeText(this, "Item 2 selected", Toast.LENGTH_SHORT).show();
+//                return true;
+//            case R.id.item3:
+//                Toast.makeText(this, "Item 3 selected", Toast.LENGTH_SHORT).show();
+//                return true;
+//            case R.id.subitem1:
+//                //Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(HsoundsActivity.this, "H Selected", Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(HsoundsActivity.this, HsoundsActivity.class));//start activity
+//                return true;
+//            case R.id.subitem2:
+//                Toast.makeText(this, "Sub Item 2 selected", Toast.LENGTH_SHORT).show();
+//                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
     }
 
     private void initAdapter() {
         adapter.clear();
         Set<String> sampleNames = soundboardData.keySet();
         for (String name : sampleNames) {
-            adapter.add(new SoundboardSample(new File(soundboardData.get(name)), name));
+            if (name.equals(HANS)) {
+                adapter.add(new SoundboardSample(new File(soundboardData.get(name)), name));
+            }
         }
         adapter.sort((a, b) -> a.getName().compareTo(b.getName())); // sort by name
     }
 
-    private void addInititalSamples() {
-        String hitPath = soundboardData.get(HIT);
-        if (hitPath == null || !new File(hitPath).exists()) {
-            createHitSampleTempFile();
+    private void addInitialSamples() {
+        String hansPath = soundboardData.get(HANS);
+        if (hansPath == null || !new File(hansPath).exists()) {
+            // createHansSampleTempFile();
+            createSampleTempFile(HANS);
         }
 
-        String ijwPath = soundboardData.get(IT_JUST_WORKS);
-        if (ijwPath == null || !new File(ijwPath).exists()) {
-            createIJWSampleTempFile();
-        }
-
-        // testing adding a new sound - Pat
-        String iamMasterPath = soundboardData.get(IAM_MASTER);
-        if (iamMasterPath == null || !new File(iamMasterPath).exists()) {
-            createiamMasterSampleTempFile();
-        }
     }
 
-    private void createIJWSampleTempFile() {
+    // general function to add sample files
+    private void createSampleTempFile(String fileToAdd) {
         try {
-            File file = File.createTempFile("ijw", "wav", getCacheDir());
+            File file = File.createTempFile(fileToAdd, "wav", getCacheDir());
+
             try (FileOutputStream out = new FileOutputStream(file)) {
-                InputStream in = getResources().openRawResource(R.raw.ijw);
+                // InputStream in = getResources().openRawResource(R.raw.hans);
+                InputStream in = getResources().openRawResource(HsoundsActivity.this.getResources().getIdentifier(fileToAdd, "drawable", getPackageName()));
                 ByteStreams.copy(in, out);
                 out.flush();
                 in.close();
 
-                soundboardData.put(IT_JUST_WORKS, file.getPath());
+                soundboardData.put(HANS, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -204,16 +200,19 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void createHitSampleTempFile() {
+    // below function works, trying to generalize above
+
+    private void createHansSampleTempFile() {
         try {
-            File file = File.createTempFile("hit", "wav", getCacheDir());
+            File file = File.createTempFile("hans", "wav", getCacheDir());
+
             try (FileOutputStream out = new FileOutputStream(file)) {
-                InputStream in = getResources().openRawResource(R.raw.hit);
+                InputStream in = getResources().openRawResource(R.raw.hans);
                 ByteStreams.copy(in, out);
                 out.flush();
                 in.close();
 
-                soundboardData.put(HIT, file.getPath());
+                soundboardData.put(HANS, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -223,25 +222,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void createiamMasterSampleTempFile() {
-        try {
-            File file = File.createTempFile("iammaster", "wav", getCacheDir());
-            try (FileOutputStream out = new FileOutputStream(file)) {
-                InputStream in = getResources().openRawResource(R.raw.iammaster);
-                ByteStreams.copy(in, out);
-                out.flush();
-                in.close();
-
-                soundboardData.put(IAM_MASTER, file.getPath());
-                saveSoundboardData();
-            } catch (IOException e) {
-                Log.w(TAG, "Unable to write tmp file!", e);
-            }
-        } catch (IOException e) {
-            Log.w(TAG, "Unable to create tmp file!", e);
-        }
-    }
-
+    // copy other functions over
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -277,29 +258,5 @@ public class MainActivity extends AppCompatActivity {
     private void saveSoundboardData() {
         preferences.edit().putString(KEY_SOUNDBOARD_DATA, new Gson().toJson(soundboardData)).apply();
     }
-
-    public void removeFromSamples(SoundboardSample sample) {
-        soundboardData.remove(sample.getName());
-        saveSoundboardData();
-        initAdapter();
-    }
-
-    public void editSample(String sampleName, @NonNull String newName) {
-        String samplePath = soundboardData.get(sampleName);
-
-        if (samplePath == null) {
-            Snackbar.make(getWindow().getDecorView(), R.string.sample_does_not_exist, Snackbar.LENGTH_LONG).show();
-            return;
-        }
-
-        if (newName.isEmpty()) {
-            Snackbar.make(getWindow().getDecorView(), R.string.invalid_sample_name, Snackbar.LENGTH_LONG).show();
-            return;
-        }
-
-        soundboardData.remove(sampleName);
-        soundboardData.put(newName, samplePath);
-        saveSoundboardData();
-        initAdapter();
-    }
 }
+

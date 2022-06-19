@@ -27,6 +27,9 @@ class SampleAdapter extends ArrayAdapter<SoundboardSample> {
     SampleAdapter(MainActivity context) {
         super(context, ITEM_VIEW);
     }
+    SampleAdapter(HsoundsActivity context) {
+        super(context, ITEM_VIEW);
+    }
 
     @androidx.annotation.NonNull
     @Override
