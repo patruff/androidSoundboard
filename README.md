@@ -1,5 +1,11 @@
 # Soundboard
 
+## Pat's log
+TO DO
+- Add ability to read ALL .wav files in a directory
+- Improve menu for each different alphabet letter (starting right now with H)
+- Clean up UI
+
 ## Features:
 - Import sample files manually
 - All file formats that Android supports
