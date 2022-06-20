@@ -135,27 +135,80 @@ public class MainActivity extends AppCompatActivity {
         }
         // return false;
 
-        switch (item.getItemId()) {
-            case R.id.item1:
+        // switch based on menu item title
+        switch (item.getTitle().toString()) {
+            case "item1":
                 Toast.makeText(this, "Item 1 selected", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.item2:
-                Toast.makeText(this, "Item 2 selected", Toast.LENGTH_SHORT).show();
+            case "A_D":
+                Toast.makeText(this, item.getTitle().toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "A through D selected", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.item3:
+            case "E_G":
+                Toast.makeText(this, item.getTitle().toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "E through G selected", Toast.LENGTH_SHORT).show();
+                return true;
+            case "item3":
                 Toast.makeText(this, "Item 3 selected", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.subitem1:
+            case "A":
                 //Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
                 Toast.makeText(MainActivity.this, "H Selected", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(MainActivity.this,HsoundsActivity.class));//start activity
                 return true;
-            case R.id.subitem2:
-                Toast.makeText(this, "Sub Item 2 selected", Toast.LENGTH_SHORT).show();
+            case "H-O":
+
+                Intent intent = new Intent(MainActivity.this,HsoundsActivity.class);
+                Character firstLetter = item.getTitle().charAt(0);
+
+//                TextView textViewName = item.findViewById(R.id.title);
+//                // pass the letter as a key
+//                intent.putString("key1", var1);// if its string type
+//                Intent.putExtra("key2", var2);// if its int type
+//                startActivity(intent);
+
+                //Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "H Selected", Toast.LENGTH_SHORT).show();
+                startActivity(intent);//start activity
                 return true;
+//            case R.id.subitem2:
+//                Toast.makeText(this, "Sub Item 2 selected", Toast.LENGTH_SHORT).show();
+//                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+
+//        switch (item.getItemId()) {
+//            case R.id.item1:
+//                Toast.makeText(this, "Item 1 selected", Toast.LENGTH_SHORT).show();
+//                return true;
+//            case R.id.ABC:
+//                Toast.makeText(this, item.getTitle().toString(), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "Item 2 selected", Toast.LENGTH_SHORT).show();
+//                return true;
+//            case R.id.item3:
+//                Toast.makeText(this, "Item 3 selected", Toast.LENGTH_SHORT).show();
+//                return true;
+//            case R.id.subitem1:
+//
+//                Intent intent = new Intent(MainActivity.this,HsoundsActivity.class);
+//                Character firstLetter = item.getTitle().charAt(0);
+//
+////                TextView textViewName = item.findViewById(R.id.title);
+////                // pass the letter as a key
+////                intent.putString("key1", var1);// if its string type
+////                Intent.putExtra("key2", var2);// if its int type
+////                startActivity(intent);
+//
+//                //Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, "H Selected", Toast.LENGTH_SHORT).show();
+//                startActivity(intent);//start activity
+//                return true;
+//            case R.id.subitem2:
+//                Toast.makeText(this, "Sub Item 2 selected", Toast.LENGTH_SHORT).show();
+//                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
     }
 
     private void initAdapter() {

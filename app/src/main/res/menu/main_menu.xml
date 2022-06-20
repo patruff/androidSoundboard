@@ -18,9 +18,51 @@
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/item2"
-        android:title="Item 2"
-        app:showAsAction="never" />
+        android:id="@+id/A_D"
+        android:title="A_D"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item
+                android:id="@+id/A"
+                android:title="A" />
+
+            <item
+                android:id="@+id/B"
+                android:title="B" />
+            <item
+                android:id="@+id/C"
+                android:title="C" />
+            <item
+                android:id="@+id/D"
+                android:title="D" />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/E_G"
+        android:title="E_G"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item
+                android:id="@+id/E"
+                android:title="E" />
+
+            <item
+                android:id="@+id/F"
+                android:title="F" />
+            <item
+                android:id="@+id/G"
+                android:title="G" />
+
+        </menu>
+
+    </item>
 
     <item
         android:id="@+id/item3"
