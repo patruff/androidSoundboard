@@ -48,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getCanonicalName();
 
     // list of static variables
+
+    // testing part 1 below
+    public static final String nonukes = "nonukes";
+    public static final String bestaround = "bestaround";
+
+    // other variables
     public static final String IT_JUST_WORKS = "It Just Works";
     public static final String HIT = "Hit";
     public static final String IAM_MASTER = "Now I Am The Master";
@@ -266,42 +272,55 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addInititalSamples() {
-        String hitPath = soundboardData.get(HIT);
-        if (hitPath == null || !new File(hitPath).exists()) {
-            createHitSampleTempFile();
-        }
+//        String hitPath = soundboardData.get(HIT);
+//        if (hitPath == null || !new File(hitPath).exists()) {
+//            createHitSampleTempFile();
+//        }
+//
+//        String ijwPath = soundboardData.get(IT_JUST_WORKS);
+//        if (ijwPath == null || !new File(ijwPath).exists()) {
+//            createIJWSampleTempFile();
+//        }
+//
+//        // testing adding a new sound - Pat
+//        String iamMasterPath = soundboardData.get(IAM_MASTER);
+//        if (iamMasterPath == null || !new File(iamMasterPath).exists()) {
+//            createiamMasterSampleTempFile();
+//        }
 
-        String ijwPath = soundboardData.get(IT_JUST_WORKS);
-        if (ijwPath == null || !new File(ijwPath).exists()) {
-            createIJWSampleTempFile();
-        }
-
-        // testing adding a new sound - Pat
-        String iamMasterPath = soundboardData.get(IAM_MASTER);
-        if (iamMasterPath == null || !new File(iamMasterPath).exists()) {
-            createiamMasterSampleTempFile();
-        }
-
-        // testing adding a new sound with just string - Pat
-        String noNukesPath = soundboardData.get(NO_NUKES);
-        if (noNukesPath == null || !new File(noNukesPath).exists()) {
-            createNoNukesSampleTempFile();
-        }
+//        // testing adding a new sound with just string - Pat
+//        String noNukesPath = soundboardData.get(NO_NUKES);
+//        if (noNukesPath == null || !new File(noNukesPath).exists()) {
+//            createNoNukesSampleTempFile();
+//        }
 
         // second block insertion point
+        // second part of process_wavs.py
+        String nonukesPath = soundboardData.get(nonukes);
+        if (nonukesPath == null || !new File(nonukesPath).exists()) {
+            createnonukesSampleTempFile();
+        }
+
+        String bestaroundPath = soundboardData.get(bestaround);
+        if (bestaroundPath == null || !new File(bestaroundPath).exists()) {
+            createbestaroundSampleTempFile();
+        }
 
     }
 
-    private void createIJWSampleTempFile() {
+    // part 3 of the process_wavs.py output
+    // the functions for the .wav files
+
+    private void createnonukesSampleTempFile() {
         try {
-            File file = File.createTempFile("ijw", "wav", getCacheDir());
+            File file = File.createTempFile("armageddon_nonukes", "wav", getCacheDir());
             try (FileOutputStream out = new FileOutputStream(file)) {
-                InputStream in = getResources().openRawResource(R.raw.ijw);
+                InputStream in = getResources().openRawResource(R.raw.armageddon_nonukes);
                 ByteStreams.copy(in, out);
                 out.flush();
                 in.close();
 
-                soundboardData.put(IT_JUST_WORKS, file.getPath());
+                soundboardData.put(nonukes, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -311,16 +330,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void createHitSampleTempFile() {
+    private void createbestaroundSampleTempFile() {
         try {
-            File file = File.createTempFile("hit", "wav", getCacheDir());
+            File file = File.createTempFile("karatekid_bestaround", "wav", getCacheDir());
             try (FileOutputStream out = new FileOutputStream(file)) {
-                InputStream in = getResources().openRawResource(R.raw.hit);
+                InputStream in = getResources().openRawResource(R.raw.karatekid_bestaround);
                 ByteStreams.copy(in, out);
                 out.flush();
                 in.close();
 
-                soundboardData.put(HIT, file.getPath());
+                soundboardData.put(bestaround, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -330,43 +349,81 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void createiamMasterSampleTempFile() {
-        try {
-            File file = File.createTempFile("iammaster", "wav", getCacheDir());
-            try (FileOutputStream out = new FileOutputStream(file)) {
-                InputStream in = getResources().openRawResource(R.raw.iammaster);
-                ByteStreams.copy(in, out);
-                out.flush();
-                in.close();
+//    private void createIJWSampleTempFile() {
+//        try {
+//            File file = File.createTempFile("ijw", "wav", getCacheDir());
+//            try (FileOutputStream out = new FileOutputStream(file)) {
+//                InputStream in = getResources().openRawResource(R.raw.ijw);
+//                ByteStreams.copy(in, out);
+//                out.flush();
+//                in.close();
+//
+//                soundboardData.put(IT_JUST_WORKS, file.getPath());
+//                saveSoundboardData();
+//            } catch (IOException e) {
+//                Log.w(TAG, "Unable to write tmp file!", e);
+//            }
+//        } catch (IOException e) {
+//            Log.w(TAG, "Unable to create tmp file!", e);
+//        }
+//    }
 
-                soundboardData.put(IAM_MASTER, file.getPath());
-                saveSoundboardData();
-            } catch (IOException e) {
-                Log.w(TAG, "Unable to write tmp file!", e);
-            }
-        } catch (IOException e) {
-            Log.w(TAG, "Unable to create tmp file!", e);
-        }
-    }
+//    private void createHitSampleTempFile() {
+//        try {
+//            File file = File.createTempFile("hit", "wav", getCacheDir());
+//            try (FileOutputStream out = new FileOutputStream(file)) {
+//                InputStream in = getResources().openRawResource(R.raw.hit);
+//                ByteStreams.copy(in, out);
+//                out.flush();
+//                in.close();
+//
+//                soundboardData.put(HIT, file.getPath());
+//                saveSoundboardData();
+//            } catch (IOException e) {
+//                Log.w(TAG, "Unable to write tmp file!", e);
+//            }
+//        } catch (IOException e) {
+//            Log.w(TAG, "Unable to create tmp file!", e);
+//        }
+//    }
 
-    private void createNoNukesSampleTempFile() {
-        try {
-            File file = File.createTempFile("armageddon_no_nukes", "wav", getCacheDir());
-            try (FileOutputStream out = new FileOutputStream(file)) {
-                InputStream in = getResources().openRawResource(R.raw.armageddon_no_nukes);
-                ByteStreams.copy(in, out);
-                out.flush();
-                in.close();
+//    private void createiamMasterSampleTempFile() {
+//        try {
+//            File file = File.createTempFile("iammaster", "wav", getCacheDir());
+//            try (FileOutputStream out = new FileOutputStream(file)) {
+//                InputStream in = getResources().openRawResource(R.raw.iammaster);
+//                ByteStreams.copy(in, out);
+//                out.flush();
+//                in.close();
+//
+//                soundboardData.put(IAM_MASTER, file.getPath());
+//                saveSoundboardData();
+//            } catch (IOException e) {
+//                Log.w(TAG, "Unable to write tmp file!", e);
+//            }
+//        } catch (IOException e) {
+//            Log.w(TAG, "Unable to create tmp file!", e);
+//        }
+//    }
 
-                soundboardData.put(NO_NUKES, file.getPath());
-                saveSoundboardData();
-            } catch (IOException e) {
-                Log.w(TAG, "Unable to write tmp file!", e);
-            }
-        } catch (IOException e) {
-            Log.w(TAG, "Unable to create tmp file!", e);
-        }
-    }
+//    private void createNoNukesSampleTempFile() {
+//        try {
+//            File file = File.createTempFile("armageddon_no_nukes", "wav", getCacheDir());
+//            try (FileOutputStream out = new FileOutputStream(file)) {
+//                InputStream in = getResources().openRawResource(R.raw.armageddon_no_nukes);
+//                ByteStreams.copy(in, out);
+//                out.flush();
+//                in.close();
+//
+//                soundboardData.put(NO_NUKES, file.getPath());
+//                saveSoundboardData();
+//            } catch (IOException e) {
+//                Log.w(TAG, "Unable to write tmp file!", e);
+//            }
+//        } catch (IOException e) {
+//            Log.w(TAG, "Unable to create tmp file!", e);
+//        }
+//    }
 
     // general function to add sample files
     private void createSampleTempFile(String fileToAdd) {

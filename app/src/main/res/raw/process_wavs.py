@@ -72,24 +72,24 @@ for filename in os.listdir(directory):
       # print(movie + " is the movie and the clip is " + clipname)
 
       print('''
-            private void create{}SampleTempFile() {{
-                try {{
-                    File file = File.createTempFile("{}_{}", "wav", getCacheDir());
-                    try (FileOutputStream out = new FileOutputStream(file)) {{
-                        InputStream in = getResources().openRawResource(R.raw.{}_{});
-                        ByteStreams.copy(in, out);
-                        out.flush();
-                        in.close();
+    private void create{}SampleTempFile() {{
+        try {{
+            File file = File.createTempFile("{}_{}", "wav", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {{
+                InputStream in = getResources().openRawResource(R.raw.{}_{});
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
 
-                        soundboardData.put({}, file.getPath());
-                        saveSoundboardData();
-                    }} catch (IOException e) {{
-                        Log.w(TAG, "Unable to write tmp file!", e);
-                    }}
-                }} catch (IOException e) {{
-                    Log.w(TAG, "Unable to create tmp file!", e);
-                }}
-            }}'''.format(clipname, movie, clipname, movie, clipname, clipname))
+                soundboardData.put({}, file.getPath());
+                saveSoundboardData();
+            }} catch (IOException e) {{
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }}
+        }} catch (IOException e) {{
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }}
+    }}'''.format(clipname, movie, clipname, movie, clipname, clipname))
 
 
 

@@ -202,24 +202,24 @@ public class HsoundsActivity extends AppCompatActivity {
         }
     }
 
-    private void createNoNukesSampleTempFile() {
-        try {
-            File file = File.createTempFile("armageddon_no_nukes", "wav", getCacheDir());
-            try (FileOutputStream out = new FileOutputStream(file)) {
-                InputStream in = getResources().openRawResource(R.raw.armageddon_no_nukes);
-                ByteStreams.copy(in, out);
-                out.flush();
-                in.close();
-
-                soundboardData.put(NO_NUKES, file.getPath());
-                saveSoundboardData();
-            } catch (IOException e) {
-                Log.w(TAG, "Unable to write tmp file!", e);
-            }
-        } catch (IOException e) {
-            Log.w(TAG, "Unable to create tmp file!", e);
-        }
-    }
+//    private void createNoNukesSampleTempFile() {
+//        try {
+//            File file = File.createTempFile("armageddon_no_nukes", "wav", getCacheDir());
+//            try (FileOutputStream out = new FileOutputStream(file)) {
+//                InputStream in = getResources().openRawResource(R.raw.armageddon_no_nukes);
+//                ByteStreams.copy(in, out);
+//                out.flush();
+//                in.close();
+//
+//                soundboardData.put(NO_NUKES, file.getPath());
+//                saveSoundboardData();
+//            } catch (IOException e) {
+//                Log.w(TAG, "Unable to write tmp file!", e);
+//            }
+//        } catch (IOException e) {
+//            Log.w(TAG, "Unable to create tmp file!", e);
+//        }
+//    }
 
 //    private void addInitialSamples() {
 //
@@ -265,25 +265,25 @@ public class HsoundsActivity extends AppCompatActivity {
 
     // below function works, trying to generalize above
 
-    private void createHansSampleTempFile() {
-        try {
-            File file = File.createTempFile("hans", "wav", getCacheDir());
-
-            try (FileOutputStream out = new FileOutputStream(file)) {
-                InputStream in = getResources().openRawResource(R.raw.hans);
-                ByteStreams.copy(in, out);
-                out.flush();
-                in.close();
-
-                soundboardData.put(HANS, file.getPath());
-                saveSoundboardData();
-            } catch (IOException e) {
-                Log.w(TAG, "Unable to write tmp file!", e);
-            }
-        } catch (IOException e) {
-            Log.w(TAG, "Unable to create tmp file!", e);
-        }
-    }
+//    private void createHansSampleTempFile() {
+//        try {
+//            File file = File.createTempFile("hans", "wav", getCacheDir());
+//
+//            try (FileOutputStream out = new FileOutputStream(file)) {
+//                InputStream in = getResources().openRawResource(R.raw.hans);
+//                ByteStreams.copy(in, out);
+//                out.flush();
+//                in.close();
+//
+//                soundboardData.put(HANS, file.getPath());
+//                saveSoundboardData();
+//            } catch (IOException e) {
+//                Log.w(TAG, "Unable to write tmp file!", e);
+//            }
+//        } catch (IOException e) {
+//            Log.w(TAG, "Unable to create tmp file!", e);
+//        }
+//    }
 
     // copy other functions over
     @Override
