@@ -2,6 +2,7 @@ package sh.lrk.soundboard;
 
 import static sh.lrk.soundboard.MainActivity.HIT;
 import static sh.lrk.soundboard.MainActivity.IT_JUST_WORKS;
+import static sh.lrk.soundboard.MainActivity.NO_NUKES;
 import static sh.lrk.soundboard.settings.SettingsActivity.DEFAULT_NUM_COLS;
 import static sh.lrk.soundboard.settings.SettingsActivity.KEY_NUM_COLS;
 
@@ -38,6 +39,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Set;
 
 import sh.lrk.soundboard.settings.SettingsActivity;
@@ -48,6 +50,7 @@ public class HsoundsActivity extends AppCompatActivity {
     private static final String TAG = HsoundsActivity.class.getCanonicalName();
 
     public static final String HANS = "hans";
+    public static final String NO_NUKES = "Armageddon No Nukes";
     public static final String KEY_SOUNDBOARD_DATA = "soundboard_data";
     public static final String DEFAULT_SOUNDBOARD_DATA = "{}";
     public static final int REQUEST_CODE = 696;
@@ -82,7 +85,7 @@ public class HsoundsActivity extends AppCompatActivity {
                     getText(R.string.select_an_audio_file)), REQUEST_CODE);
         });
 
-        addInitialSamples();
+        // addInitialSamples();
         initAdapter();
         gridView.setAdapter(adapter);
 
@@ -158,25 +161,85 @@ public class HsoundsActivity extends AppCompatActivity {
 //        }
     }
 
+    // init adapter and add samples based on first letter
+    // passed from MainActivity
     private void initAdapter() {
         adapter.clear();
         Set<String> sampleNames = soundboardData.keySet();
         for (String name : sampleNames) {
-            if (name.equals(HANS)) {
+//            if (name.equals(HANS)) {
+//                adapter.add(new SoundboardSample(new File(soundboardData.get(name)), name));
+//            }
+
+            // Intent intent = getIntent();
+            String value = getIntent().getStringExtra("key2");
+            //String firstLetter = intent.getStringExtra("firstLetterKey");
+
+            //Bundle bundle = getIntent().getExtras();
+            //String firstLetter= bundle.getString("key2");
+            //char ch = 'h';
+            //String value=getIntent().getCharExtra();
+            //char value=getIntent().getCharExtra("key2", ch);
+
+            //Character c1 = getIntent().getExtras().getChar("firstLetterKey");
+            // Toast.makeText(HsoundsActivity.this, "trying to print c1", Toast.LENGTH_SHORT).show();
+
+            //Toast.makeText(HsoundsActivity.this, value, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(HsoundsActivity.this, "just printed firstLetter", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(HsoundsActivity.this, name.substring(0,1).toLowerCase(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(HsoundsActivity.this, c1, Toast.LENGTH_SHORT).show();
+
+            if (name.substring(0,1).equalsIgnoreCase(value)) {
+                // this works
+                Toast.makeText(HsoundsActivity.this, "I hate JAVA", Toast.LENGTH_SHORT).show();
                 adapter.add(new SoundboardSample(new File(soundboardData.get(name)), name));
+                String filePath = soundboardData.get(name);
+                if (filePath == null || !new File(filePath).exists()) {
+                    //createSampleTempFile(name);
+                    //createNoNukesSampleTempFile();
+                }
             }
         }
-        adapter.sort((a, b) -> a.getName().compareTo(b.getName())); // sort by name
     }
 
-    private void addInitialSamples() {
-        String hansPath = soundboardData.get(HANS);
-        if (hansPath == null || !new File(hansPath).exists()) {
-            // createHansSampleTempFile();
-            createSampleTempFile(HANS);
+    private void createNoNukesSampleTempFile() {
+        try {
+            File file = File.createTempFile("armageddon_no_nukes", "wav", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.armageddon_no_nukes);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(NO_NUKES, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
         }
-
     }
+
+//    private void addInitialSamples() {
+//
+//        String hansPath = soundboardData.get(HANS);
+//        // assign values to c1, c2
+//        Character c2 = new Character('A');
+//
+//        boolean res = c1.equals(c2);
+//
+//        if (c1.equals()) {
+//            // createHansSampleTempFile();
+//            createSampleTempFile(HANS);
+//        }
+//
+////        if (hansPath == null || !new File(hansPath).exists()) {
+////            // createHansSampleTempFile();
+////            createSampleTempFile(HANS);
+////        }
+
+    //}
 
     // general function to add sample files
     private void createSampleTempFile(String fileToAdd) {
@@ -190,7 +253,7 @@ public class HsoundsActivity extends AppCompatActivity {
                 out.flush();
                 in.close();
 
-                soundboardData.put(HANS, file.getPath());
+                soundboardData.put(fileToAdd, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
