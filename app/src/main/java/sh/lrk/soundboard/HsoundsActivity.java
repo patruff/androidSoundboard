@@ -124,41 +124,8 @@ public class HsoundsActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
+        // no need for menu, just return true
         return true;
-//        if (itemId == R.id.settings) {
-//            startActivity(new Intent(this, SettingsActivity.class));
-//            return true;
-//        } else if (itemId == R.id.findSounds) {
-//            new AlertDialog.Builder(this)
-//                    .setNeutralButton(R.string.okay, (d, w) -> d.dismiss())
-//                    .setTitle(R.string.diag_title_find_sounds)
-//                    .setMessage(R.string.diag_message_find_sounds)
-//                    .setIcon(R.drawable.ic_help_outline_white_24dp)
-//                    .create().show();
-//        }
-//        // return false;
-//
-//        switch (item.getItemId()) {
-//            case R.id.item1:
-//                Toast.makeText(this, "Item 1 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.item2:
-//                Toast.makeText(this, "Item 2 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.item3:
-//                Toast.makeText(this, "Item 3 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.subitem1:
-//                //Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
-//                Toast.makeText(HsoundsActivity.this, "H Selected", Toast.LENGTH_SHORT).show();
-//                startActivity(new Intent(HsoundsActivity.this, HsoundsActivity.class));//start activity
-//                return true;
-//            case R.id.subitem2:
-//                Toast.makeText(this, "Sub Item 2 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            default:
-//                return super.onOptionsItemSelected(item);
-//        }
     }
 
     // init adapter and add samples based on first letter
@@ -167,28 +134,10 @@ public class HsoundsActivity extends AppCompatActivity {
         adapter.clear();
         Set<String> sampleNames = soundboardData.keySet();
         for (String name : sampleNames) {
-//            if (name.equals(HANS)) {
-//                adapter.add(new SoundboardSample(new File(soundboardData.get(name)), name));
-//            }
-
-            // Intent intent = getIntent();
+            // check the first letter (passed from Main)
             String value = getIntent().getStringExtra("key2");
-            //String firstLetter = intent.getStringExtra("firstLetterKey");
 
-            //Bundle bundle = getIntent().getExtras();
-            //String firstLetter= bundle.getString("key2");
-            //char ch = 'h';
-            //String value=getIntent().getCharExtra();
-            //char value=getIntent().getCharExtra("key2", ch);
-
-            //Character c1 = getIntent().getExtras().getChar("firstLetterKey");
-            // Toast.makeText(HsoundsActivity.this, "trying to print c1", Toast.LENGTH_SHORT).show();
-
-            //Toast.makeText(HsoundsActivity.this, value, Toast.LENGTH_SHORT).show();
-            //Toast.makeText(HsoundsActivity.this, "just printed firstLetter", Toast.LENGTH_SHORT).show();
-            //Toast.makeText(HsoundsActivity.this, name.substring(0,1).toLowerCase(), Toast.LENGTH_SHORT).show();
-            //Toast.makeText(HsoundsActivity.this, c1, Toast.LENGTH_SHORT).show();
-
+            // if the value from Main (i.e. "A") matches the sound clip name
             if (name.substring(0,1).equalsIgnoreCase(value)) {
                 // this works
                 Toast.makeText(HsoundsActivity.this, "I hate JAVA", Toast.LENGTH_SHORT).show();

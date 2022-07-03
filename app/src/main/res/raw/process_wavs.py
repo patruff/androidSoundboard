@@ -22,7 +22,7 @@ for filename in os.listdir(directory):
 
       # print the first part of Java code
       # the declared static variables
-      print('''public static final String {} = "{}";'''.format(clipname, clipname))
+      print('''public static final String {}_{} = "{} {}";'''.format(movie, clipname, movie[0], clipname))
 
 
 # this for loop prints out the 2nd part of the Java code
@@ -45,10 +45,10 @@ for filename in os.listdir(directory):
 
       # print('''public static final String {} = "{}";'''.format(clipname, clipname))
       print('''
-        String {}Path = soundboardData.get({});
+        String {}Path = soundboardData.get({}_{});
         if ({}Path == null || !new File({}Path).exists()) {{
             create{}SampleTempFile();
-        }}'''.format(clipname, clipname, clipname, clipname, clipname))
+        }}'''.format(clipname, movie, clipname, clipname, clipname, clipname))
 
 # this last for loop prints out the
 # functions for each .wav file
@@ -81,7 +81,7 @@ for filename in os.listdir(directory):
                 out.flush();
                 in.close();
 
-                soundboardData.put({}, file.getPath());
+                soundboardData.put({}_{}, file.getPath());
                 saveSoundboardData();
             }} catch (IOException e) {{
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -89,7 +89,7 @@ for filename in os.listdir(directory):
         }} catch (IOException e) {{
             Log.w(TAG, "Unable to create tmp file!", e);
         }}
-    }}'''.format(clipname, movie, clipname, movie, clipname, clipname))
+    }}'''.format(clipname, movie, clipname, movie, clipname, movie, clipname))
 
 
 

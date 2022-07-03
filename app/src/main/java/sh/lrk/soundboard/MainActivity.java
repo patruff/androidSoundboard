@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
     // list of static variables
 
     // testing part 1 below
-    public static final String nonukes = "nonukes";
-    public static final String bestaround = "bestaround";
+    public static final String armageddon_nonukes = "a nonukes";
+    public static final String karatekid_bestaround = "k bestaround";
 
     // other variables
     public static final String IT_JUST_WORKS = "It Just Works";
@@ -186,80 +186,38 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "B Selected", Toast.LENGTH_SHORT).show();
                 return true;
             case "H-O":
-
-                //Intent intent = new Intent(MainActivity.this,HsoundsActivity.class);
-                //Character firstLetter = item.getTitle().charAt(0);
-
-//                TextView textViewName = item.findViewById(R.id.title);
-//                // pass the letter as a key
-//                intent.putString("key1", var1);// if its string type
-//                Intent.putExtra("key2", var2);// if its int type
-//                startActivity(intent);
-
-                //Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
                 Toast.makeText(MainActivity.this, "H Selected", Toast.LENGTH_SHORT).show();
-                //startActivity(intent);//start activity
                 return true;
             case "H":
-                //Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
-                //Toast.makeText(MainActivity.this, "A Selected", Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(getApplicationContext(),HsoundsActivity.class);
                 String firstLetter0 = item.getTitle().toString().toLowerCase();
-                //char firstLetter0 = item.getTitle().toString().toLowerCase().charAt(0);
 
                 Toast.makeText(MainActivity.this, item.getTitle().toString().toLowerCase(), Toast.LENGTH_SHORT).show();
-    //                TextView textViewName = item.findViewById(R.id.title);
-    //                // pass the letter as a key
-                //intent.putExtra("key2",Character.toString(firstLetter0));
+                startActivity(intent);//start activity
+                return true;
+            case "K":
+                Intent intent3 = new Intent(getApplicationContext(),HsoundsActivity.class);
+                //String firstLetter3 = item.getTitle().toString().toLowerCase();
+                char firstLetter3 = item.getTitle().toString().toLowerCase().charAt(0);
+
+                //Toast.makeText(MainActivity.this, item.getTitle().toString().toLowerCase(), Toast.LENGTH_SHORT).show();
+                //                TextView textViewName = item.findViewById(R.id.title);
+                //                // pass the letter as a key
+                intent3.putExtra("key2",Character.toString(firstLetter3));
 
                 //intent2.putExtra("firstLetterKey", firstLetter2);// if its string type
-    //                Intent.putExtra("key2", var2);// if its int type
-    //                startActivity(intent);
+                //                Intent.putExtra("key2", var2);// if its int type
+                //                startActivity(intent);
 
                 //Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
                 //Toast.makeText(MainActivity.this, "H Selected", Toast.LENGTH_SHORT).show();
-                startActivity(intent);//start activity
+                startActivity(intent3);//start activity
                 return true;
-//            case R.id.subitem2:
-//                Toast.makeText(this, "Sub Item 2 selected", Toast.LENGTH_SHORT).show();
-//                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
 
-//        switch (item.getItemId()) {
-//            case R.id.item1:
-//                Toast.makeText(this, "Item 1 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.ABC:
-//                Toast.makeText(this, item.getTitle().toString(), Toast.LENGTH_SHORT).show();
-//                Toast.makeText(this, "Item 2 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.item3:
-//                Toast.makeText(this, "Item 3 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.subitem1:
-//
-//                Intent intent = new Intent(MainActivity.this,HsoundsActivity.class);
-//                Character firstLetter = item.getTitle().charAt(0);
-//
-////                TextView textViewName = item.findViewById(R.id.title);
-////                // pass the letter as a key
-////                intent.putString("key1", var1);// if its string type
-////                Intent.putExtra("key2", var2);// if its int type
-////                startActivity(intent);
-//
-//                //Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
-//                Toast.makeText(MainActivity.this, "H Selected", Toast.LENGTH_SHORT).show();
-//                startActivity(intent);//start activity
-//                return true;
-//            case R.id.subitem2:
-//                Toast.makeText(this, "Sub Item 2 selected", Toast.LENGTH_SHORT).show();
-//                return true;
-//            default:
-//                return super.onOptionsItemSelected(item);
-//        }
     }
 
     private void initAdapter() {
@@ -272,36 +230,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addInititalSamples() {
-//        String hitPath = soundboardData.get(HIT);
-//        if (hitPath == null || !new File(hitPath).exists()) {
-//            createHitSampleTempFile();
-//        }
-//
-//        String ijwPath = soundboardData.get(IT_JUST_WORKS);
-//        if (ijwPath == null || !new File(ijwPath).exists()) {
-//            createIJWSampleTempFile();
-//        }
-//
-//        // testing adding a new sound - Pat
-//        String iamMasterPath = soundboardData.get(IAM_MASTER);
-//        if (iamMasterPath == null || !new File(iamMasterPath).exists()) {
-//            createiamMasterSampleTempFile();
-//        }
-
-//        // testing adding a new sound with just string - Pat
-//        String noNukesPath = soundboardData.get(NO_NUKES);
-//        if (noNukesPath == null || !new File(noNukesPath).exists()) {
-//            createNoNukesSampleTempFile();
-//        }
 
         // second block insertion point
         // second part of process_wavs.py
-        String nonukesPath = soundboardData.get(nonukes);
+        String nonukesPath = soundboardData.get(armageddon_nonukes);
         if (nonukesPath == null || !new File(nonukesPath).exists()) {
             createnonukesSampleTempFile();
         }
 
-        String bestaroundPath = soundboardData.get(bestaround);
+        String bestaroundPath = soundboardData.get(karatekid_bestaround);
         if (bestaroundPath == null || !new File(bestaroundPath).exists()) {
             createbestaroundSampleTempFile();
         }
@@ -320,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
                 out.flush();
                 in.close();
 
-                soundboardData.put(nonukes, file.getPath());
+                soundboardData.put(armageddon_nonukes, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -339,7 +276,7 @@ public class MainActivity extends AppCompatActivity {
                 out.flush();
                 in.close();
 
-                soundboardData.put(bestaround, file.getPath());
+                soundboardData.put(karatekid_bestaround, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -348,82 +285,6 @@ public class MainActivity extends AppCompatActivity {
             Log.w(TAG, "Unable to create tmp file!", e);
         }
     }
-
-//    private void createIJWSampleTempFile() {
-//        try {
-//            File file = File.createTempFile("ijw", "wav", getCacheDir());
-//            try (FileOutputStream out = new FileOutputStream(file)) {
-//                InputStream in = getResources().openRawResource(R.raw.ijw);
-//                ByteStreams.copy(in, out);
-//                out.flush();
-//                in.close();
-//
-//                soundboardData.put(IT_JUST_WORKS, file.getPath());
-//                saveSoundboardData();
-//            } catch (IOException e) {
-//                Log.w(TAG, "Unable to write tmp file!", e);
-//            }
-//        } catch (IOException e) {
-//            Log.w(TAG, "Unable to create tmp file!", e);
-//        }
-//    }
-
-//    private void createHitSampleTempFile() {
-//        try {
-//            File file = File.createTempFile("hit", "wav", getCacheDir());
-//            try (FileOutputStream out = new FileOutputStream(file)) {
-//                InputStream in = getResources().openRawResource(R.raw.hit);
-//                ByteStreams.copy(in, out);
-//                out.flush();
-//                in.close();
-//
-//                soundboardData.put(HIT, file.getPath());
-//                saveSoundboardData();
-//            } catch (IOException e) {
-//                Log.w(TAG, "Unable to write tmp file!", e);
-//            }
-//        } catch (IOException e) {
-//            Log.w(TAG, "Unable to create tmp file!", e);
-//        }
-//    }
-
-//    private void createiamMasterSampleTempFile() {
-//        try {
-//            File file = File.createTempFile("iammaster", "wav", getCacheDir());
-//            try (FileOutputStream out = new FileOutputStream(file)) {
-//                InputStream in = getResources().openRawResource(R.raw.iammaster);
-//                ByteStreams.copy(in, out);
-//                out.flush();
-//                in.close();
-//
-//                soundboardData.put(IAM_MASTER, file.getPath());
-//                saveSoundboardData();
-//            } catch (IOException e) {
-//                Log.w(TAG, "Unable to write tmp file!", e);
-//            }
-//        } catch (IOException e) {
-//            Log.w(TAG, "Unable to create tmp file!", e);
-//        }
-//    }
-
-//    private void createNoNukesSampleTempFile() {
-//        try {
-//            File file = File.createTempFile("armageddon_no_nukes", "wav", getCacheDir());
-//            try (FileOutputStream out = new FileOutputStream(file)) {
-//                InputStream in = getResources().openRawResource(R.raw.armageddon_no_nukes);
-//                ByteStreams.copy(in, out);
-//                out.flush();
-//                in.close();
-//
-//                soundboardData.put(NO_NUKES, file.getPath());
-//                saveSoundboardData();
-//            } catch (IOException e) {
-//                Log.w(TAG, "Unable to write tmp file!", e);
-//            }
-//        } catch (IOException e) {
-//            Log.w(TAG, "Unable to create tmp file!", e);
-//        }
-//    }
 
     // general function to add sample files
     private void createSampleTempFile(String fileToAdd) {
