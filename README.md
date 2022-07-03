@@ -1,10 +1,10 @@
 # Soundboard
 
 ## Pat's log
-TO DO
-- Add ability to read ALL .wav files in a directory
-- Improve menu for each different alphabet letter (starting right now with H)
-- Clean up UI
+DONE
+- Solved the issue with generating .wav code (now just run python process_wavs.py in the res/raw
+- directory and COPY+PASTE that output into the MainActivity.class file)
+- Fixed menu such that individual letters create their own pages in the app
 
 ## Features:
 - Import sample files manually
