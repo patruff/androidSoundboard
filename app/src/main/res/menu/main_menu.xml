@@ -19,7 +19,7 @@
 
     <item
         android:id="@+id/A_D"
-        android:title="A_D"
+        android:title="A-D"
         app:showAsAction="never">
 
         <menu>
@@ -44,7 +44,7 @@
 
     <item
         android:id="@+id/E_G"
-        android:title="E_G"
+        android:title="E-G"
         app:showAsAction="never">
 
         <menu>
@@ -96,6 +96,77 @@
             <item
                 android:id="@+id/subitem8"
                 android:title="O" />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/P_R"
+        android:title="P-R"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item
+                android:id="@+id/P"
+                android:title="P" />
+
+            <item
+                android:id="@+id/Q"
+                android:title="Q" />
+            <item
+                android:id="@+id/R"
+                android:title="R" />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/S_T"
+        android:title="S-T"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item
+                android:id="@+id/S"
+                android:title="S" />
+
+            <item
+                android:id="@+id/T"
+                android:title="T" />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/U_Z"
+        android:title="U-Z"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item
+                android:id="@+id/U"
+                android:title="U" />
+            <item
+                android:id="@+id/V"
+                android:title="V" />
+            <item
+                android:id="@+id/W"
+                android:title="W" />
+            <item
+                android:id="@+id/X"
+                android:title="X" />
+            <item
+                android:id="@+id/Y"
+                android:title="Y" />
+            <item
+                android:id="@+id/Z"
+                android:title="Z" />
 
         </menu>
 

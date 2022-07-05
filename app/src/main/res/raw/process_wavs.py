@@ -18,7 +18,7 @@ for filename in os.listdir(directory):
       clipname = just_the_file.split('_')[1].split('.wav')[0]
 
       if clipname == 'wavs.py':
-        break
+        continue
 
       # print the first part of Java code
       # the declared static variables
@@ -40,7 +40,7 @@ for filename in os.listdir(directory):
       clipname = just_the_file.split('_')[1].split('.wav')[0]
 
       if clipname == 'wavs.py':
-        break
+        continue
       # print(movie + " is the movie and the clip is " + clipname)
 
       # print('''public static final String {} = "{}";'''.format(clipname, clipname))
@@ -68,7 +68,7 @@ for filename in os.listdir(directory):
       clipname = just_the_file.split('_')[1].split('.wav')[0]
 
       if clipname == 'wavs.py':
-        break
+        continue
       # print(movie + " is the movie and the clip is " + clipname)
 
       print('''

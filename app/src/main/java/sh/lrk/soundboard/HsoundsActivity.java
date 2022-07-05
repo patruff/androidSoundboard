@@ -1,8 +1,5 @@
 package sh.lrk.soundboard;
 
-import static sh.lrk.soundboard.MainActivity.HIT;
-import static sh.lrk.soundboard.MainActivity.IT_JUST_WORKS;
-import static sh.lrk.soundboard.MainActivity.NO_NUKES;
 import static sh.lrk.soundboard.settings.SettingsActivity.DEFAULT_NUM_COLS;
 import static sh.lrk.soundboard.settings.SettingsActivity.KEY_NUM_COLS;
 
