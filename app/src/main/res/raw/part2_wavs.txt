@@ -11,9 +11,17 @@
         if (yalethingPath == null || !new File(yalethingPath).exists()) {
             createyalethingSampleTempFile();
         }
+        String backupplanPath = soundboardData.get(armageddon_backupplan);
+        if (backupplanPath == null || !new File(backupplanPath).exists()) {
+            createbackupplanSampleTempFile();
+        }
         String nonukesPath = soundboardData.get(armageddon_nonukes);
         if (nonukesPath == null || !new File(nonukesPath).exists()) {
             createnonukesSampleTempFile();
+        }
+        String solarwindsPath = soundboardData.get(armageddon_solarwinds);
+        if (solarwindsPath == null || !new File(solarwindsPath).exists()) {
+            createsolarwindsSampleTempFile();
         }
         String whitehousePath = soundboardData.get(armageddon_whitehouse);
         if (whitehousePath == null || !new File(whitehousePath).exists()) {
@@ -115,6 +123,22 @@
         if (suckafuckPath == null || !new File(suckafuckPath).exists()) {
             createsuckafuckSampleTempFile();
         }
+        String homephonePath = soundboardData.get(et_homephone);
+        if (homephonePath == null || !new File(homephonePath).exists()) {
+            createhomephoneSampleTempFile();
+        }
+        String ouchPath = soundboardData.get(et_ouch);
+        if (ouchPath == null || !new File(ouchPath).exists()) {
+            createouchSampleTempFile();
+        }
+        String faceoffPath = soundboardData.get(faceoff_faceoff);
+        if (faceoffPath == null || !new File(faceoffPath).exists()) {
+            createfaceoffSampleTempFile();
+        }
+        String multipassPath = soundboardData.get(fifthelement_multipass);
+        if (multipassPath == null || !new File(multipassPath).exists()) {
+            createmultipassSampleTempFile();
+        }
         String whocaresPath = soundboardData.get(fifthelement_whocares);
         if (whocaresPath == null || !new File(whocaresPath).exists()) {
             createwhocaresSampleTempFile();
@@ -122,6 +146,14 @@
         String falconpunchPath = soundboardData.get(fzero_falconpunch);
         if (falconpunchPath == null || !new File(falconpunchPath).exists()) {
             createfalconpunchSampleTempFile();
+        }
+        String swimbackPath = soundboardData.get(gattaca_swimback);
+        if (swimbackPath == null || !new File(swimbackPath).exists()) {
+            createswimbackSampleTempFile();
+        }
+        String whatsyournumberPath = soundboardData.get(gattaca_whatsyournumber);
+        if (whatsyournumberPath == null || !new File(whatsyournumberPath).exists()) {
+            createwhatsyournumberSampleTempFile();
         }
         String nodickPath = soundboardData.get(ghostbusters_nodick);
         if (nodickPath == null || !new File(nodickPath).exists()) {
@@ -139,9 +171,57 @@
         if (pricewrongPath == null || !new File(pricewrongPath).exists()) {
             createpricewrongSampleTempFile();
         }
+        String 30secondsPath = soundboardData.get(heat_30seconds);
+        if (30secondsPath == null || !new File(30secondsPath).exists()) {
+            create30secondsSampleTempFile();
+        }
+        String greatassPath = soundboardData.get(heat_greatass);
+        if (greatassPath == null || !new File(greatassPath).exists()) {
+            creategreatassSampleTempFile();
+        }
+        String doittoitlarsPath = soundboardData.get(heavyweights_doittoitlars);
+        if (doittoitlarsPath == null || !new File(doittoitlarsPath).exists()) {
+            createdoittoitlarsSampleTempFile();
+        }
+        String lackofhustlePath = soundboardData.get(heavyweights_lackofhustle);
+        if (lackofhustlePath == null || !new File(lackofhustlePath).exists()) {
+            createlackofhustleSampleTempFile();
+        }
+        String welcometoearthPath = soundboardData.get(indendenceday_welcometoearth);
+        if (welcometoearthPath == null || !new File(welcometoearthPath).exists()) {
+            createwelcometoearthSampleTempFile();
+        }
+        String chosepoorlyPath = soundboardData.get(indianacrusade_chosepoorly);
+        if (chosepoorlyPath == null || !new File(chosepoorlyPath).exists()) {
+            createchosepoorlySampleTempFile();
+        }
+        String dontdrinkPath = soundboardData.get(indianatemple_dontdrink);
+        if (dontdrinkPath == null || !new File(dontdrinkPath).exists()) {
+            createdontdrinkSampleTempFile();
+        }
+        String poisonyoudrankPath = soundboardData.get(indianatemple_poisonyoudrank);
+        if (poisonyoudrankPath == null || !new File(poisonyoudrankPath).exists()) {
+            createpoisonyoudrankSampleTempFile();
+        }
+        String josephPath = soundboardData.get(itsawonderfullife_joseph);
+        if (josephPath == null || !new File(josephPath).exists()) {
+            createjosephSampleTempFile();
+        }
+        String maryPath = soundboardData.get(itsawonderfullife_mary);
+        if (maryPath == null || !new File(maryPath).exists()) {
+            createmarySampleTempFile();
+        }
         String whosbadPath = soundboardData.get(jackson_whosbad);
         if (whosbadPath == null || !new File(whosbadPath).exists()) {
             createwhosbadSampleTempFile();
+        }
+        String hellojohnPath = soundboardData.get(jurassicpark_hellojohn);
+        if (hellojohnPath == null || !new File(hellojohnPath).exists()) {
+            createhellojohnSampleTempFile();
+        }
+        String wehavetrexPath = soundboardData.get(jurassicpark_wehavetrex);
+        if (wehavetrexPath == null || !new File(wehavetrexPath).exists()) {
+            createwehavetrexSampleTempFile();
         }
         String bestaroundPath = soundboardData.get(karatekid_bestaround);
         if (bestaroundPath == null || !new File(bestaroundPath).exists()) {
@@ -159,9 +239,21 @@
         if (tumaPath == null || !new File(tumaPath).exists()) {
             createtumaSampleTempFile();
         }
+        String notfairPath = soundboardData.get(labrynth_notfair);
+        if (notfairPath == null || !new File(notfairPath).exists()) {
+            createnotfairSampleTempFile();
+        }
         String tobyslavePath = soundboardData.get(labrynth_tobyslave);
         if (tobyslavePath == null || !new File(tobyslavePath).exists()) {
             createtobyslaveSampleTempFile();
+        }
+        String masteroflifePath = soundboardData.get(lastofthemohicans_masteroflife);
+        if (masteroflifePath == null || !new File(masteroflifePath).exists()) {
+            createmasteroflifeSampleTempFile();
+        }
+        String mogwaenglishPath = soundboardData.get(lastofthemohicans_mogwaenglish);
+        if (mogwaenglishPath == null || !new File(mogwaenglishPath).exists()) {
+            createmogwaenglishSampleTempFile();
         }
         String takemePath = soundboardData.get(lastofthemohicans_takeme);
         if (takemePath == null || !new File(takemePath).exists()) {
@@ -179,6 +271,22 @@
         if (getitgirlPath == null || !new File(getitgirlPath).exists()) {
             creategetitgirlSampleTempFile();
         }
+        String noothermasterPath = soundboardData.get(lordoftherings_noothermaster);
+        if (noothermasterPath == null || !new File(noothermasterPath).exists()) {
+            createnoothermasterSampleTempFile();
+        }
+        String sharetheloadPath = soundboardData.get(lordoftherings_sharetheload);
+        if (sharetheloadPath == null || !new File(sharetheloadPath).exists()) {
+            createsharetheloadSampleTempFile();
+        }
+        String airbreathingPath = soundboardData.get(matrix_airbreathing);
+        if (airbreathingPath == null || !new File(airbreathingPath).exists()) {
+            createairbreathingSampleTempFile();
+        }
+        String ignoranceblissPath = soundboardData.get(matrix_ignorancebliss);
+        if (ignoranceblissPath == null || !new File(ignoranceblissPath).exists()) {
+            createignoranceblissSampleTempFile();
+        }
         String sowhatPath = soundboardData.get(metallica_sowhat);
         if (sowhatPath == null || !new File(sowhatPath).exists()) {
             createsowhatSampleTempFile();
@@ -190,6 +298,10 @@
         String winifyouwantPath = soundboardData.get(moderntalking_winifyouwant);
         if (winifyouwantPath == null || !new File(winifyouwantPath).exists()) {
             createwinifyouwantSampleTempFile();
+        }
+        String gracePath = soundboardData.get(nationallampoonchristmas_grace);
+        if (gracePath == null || !new File(gracePath).exists()) {
+            creategraceSampleTempFile();
         }
         String getmadPath = soundboardData.get(network_getmad);
         if (getmadPath == null || !new File(getmadPath).exists()) {
@@ -203,9 +315,81 @@
         if (bastionyeahPath == null || !new File(bastionyeahPath).exists()) {
             createbastionyeahSampleTempFile();
         }
+        String brotherskeeperPath = soundboardData.get(newjackcity_brotherskeeper);
+        if (brotherskeeperPath == null || !new File(brotherskeeperPath).exists()) {
+            createbrotherskeeperSampleTempFile();
+        }
+        String shyonehorsePath = soundboardData.get(onceupontimewest_shyonehorse);
+        if (shyonehorsePath == null || !new File(shyonehorsePath).exists()) {
+            createshyonehorseSampleTempFile();
+        }
         String gottabelievePath = soundboardData.get(parappa_gottabelieve);
         if (gottabelievePath == null || !new File(gottabelievePath).exists()) {
             creategottabelieveSampleTempFile();
+        }
+        String bigirritaterouneyesPath = soundboardData.get(pest_bigirritaterouneyes);
+        if (bigirritaterouneyesPath == null || !new File(bigirritaterouneyesPath).exists()) {
+            createbigirritaterouneyesSampleTempFile();
+        }
+        String childrenPath = soundboardData.get(pest_children);
+        if (childrenPath == null || !new File(childrenPath).exists()) {
+            createchildrenSampleTempFile();
+        }
+        String deergoosePath = soundboardData.get(pest_deergoose);
+        if (deergoosePath == null || !new File(deergoosePath).exists()) {
+            createdeergooseSampleTempFile();
+        }
+        String plindatthetimePath = soundboardData.get(pest_plindatthetime);
+        if (plindatthetimePath == null || !new File(plindatthetimePath).exists()) {
+            createplindatthetimeSampleTempFile();
+        }
+        String telepathyPath = soundboardData.get(pest_telepathy);
+        if (telepathyPath == null || !new File(telepathyPath).exists()) {
+            createtelepathySampleTempFile();
+        }
+        String mytownPath = soundboardData.get(quickandthedead_mytown);
+        if (mytownPath == null || !new File(mytownPath).exists()) {
+            createmytownSampleTempFile();
+        }
+        String badtimeforeveryonePath = soundboardData.get(rambo_badtimeforeveryone);
+        if (badtimeforeveryonePath == null || !new File(badtimeforeveryonePath).exists()) {
+            createbadtimeforeveryoneSampleTempFile();
+        }
+        String comebacktotheworldPath = soundboardData.get(rambo_comebacktotheworld);
+        if (comebacktotheworldPath == null || !new File(comebacktotheworldPath).exists()) {
+            createcomebacktotheworldSampleTempFile();
+        }
+        String icouldflyagunshipPath = soundboardData.get(rambo_icouldflyagunship);
+        if (icouldflyagunshipPath == null || !new File(icouldflyagunshipPath).exists()) {
+            createicouldflyagunshipSampleTempFile();
+        }
+        String legsPath = soundboardData.get(rambo_legs);
+        if (legsPath == null || !new File(legsPath).exists()) {
+            createlegsSampleTempFile();
+        }
+        String longspeechPath = soundboardData.get(rambo_longspeech);
+        if (longspeechPath == null || !new File(longspeechPath).exists()) {
+            createlongspeechSampleTempFile();
+        }
+        String nobodyhelpPath = soundboardData.get(rambo_nobodyhelp);
+        if (nobodyhelpPath == null || !new File(nobodyhelpPath).exists()) {
+            createnobodyhelpSampleTempFile();
+        }
+        String nothingisoverPath = soundboardData.get(rambo_nothingisover);
+        if (nothingisoverPath == null || !new File(nothingisoverPath).exists()) {
+            createnothingisoverSampleTempFile();
+        }
+        String overjohnnyPath = soundboardData.get(rambo_overjohnny);
+        if (overjohnnyPath == null || !new File(overjohnnyPath).exists()) {
+            createoverjohnnySampleTempFile();
+        }
+        String parkingcarsPath = soundboardData.get(rambo_parkingcars);
+        if (parkingcarsPath == null || !new File(parkingcarsPath).exists()) {
+            createparkingcarsSampleTempFile();
+        }
+        String wasntmywarPath = soundboardData.get(rambo_wasntmywar);
+        if (wasntmywarPath == null || !new File(wasntmywarPath).exists()) {
+            createwasntmywarSampleTempFile();
         }
         String plainzeroPath = soundboardData.get(runningman_plainzero);
         if (plainzeroPath == null || !new File(plainzeroPath).exists()) {
@@ -271,6 +455,10 @@
         if (fookerPath == null || !new File(fookerPath).exists()) {
             createfookerSampleTempFile();
         }
+        String lostsaiPath = soundboardData.get(tmnt_lostsai);
+        if (lostsaiPath == null || !new File(lostsaiPath).exists()) {
+            createlostsaiSampleTempFile();
+        }
         String idiotstarscreamPath = soundboardData.get(transformers_idiotstarscream);
         if (idiotstarscreamPath == null || !new File(idiotstarscreamPath).exists()) {
             createidiotstarscreamSampleTempFile();
@@ -282,6 +470,26 @@
         String ripoutopticsPath = soundboardData.get(transformers_ripoutoptics);
         if (ripoutopticsPath == null || !new File(ripoutopticsPath).exists()) {
             createripoutopticsSampleTempFile();
+        }
+        String notidenticalPath = soundboardData.get(twins_notidentical);
+        if (notidenticalPath == null || !new File(notidenticalPath).exists()) {
+            createnotidenticalSampleTempFile();
+        }
+        String yourbrotherPath = soundboardData.get(twins_yourbrother);
+        if (yourbrotherPath == null || !new File(yourbrotherPath).exists()) {
+            createyourbrotherSampleTempFile();
+        }
+        String badteachspeechPath = soundboardData.get(unclebuck_badteachspeech);
+        if (badteachspeechPath == null || !new File(badteachspeechPath).exists()) {
+            createbadteachspeechSampleTempFile();
+        }
+        String mcquestionsPath = soundboardData.get(unclebuck_mcquestions);
+        if (mcquestionsPath == null || !new File(mcquestionsPath).exists()) {
+            createmcquestionsSampleTempFile();
+        }
+        String remember5thPath = soundboardData.get(vforvendetta_remember5th);
+        if (remember5thPath == null || !new File(remember5thPath).exists()) {
+            createremember5thSampleTempFile();
         }
         String cowbellpantsPath = soundboardData.get(walken_cowbellpants);
         if (cowbellpantsPath == null || !new File(cowbellpantsPath).exists()) {
@@ -299,9 +507,21 @@
         if (ricflairPath == null || !new File(ricflairPath).exists()) {
             createricflairSampleTempFile();
         }
+        String empirewilllivePath = soundboardData.get(xmen_empirewilllive);
+        if (empirewilllivePath == null || !new File(empirewilllivePath).exists()) {
+            createempirewillliveSampleTempFile();
+        }
+        String leadersweakPath = soundboardData.get(xmen_leadersweak);
+        if (leadersweakPath == null || !new File(leadersweakPath).exists()) {
+            createleadersweakSampleTempFile();
+        }
         String nochoicePath = soundboardData.get(xmen_nochoice);
         if (nochoicePath == null || !new File(nochoicePath).exists()) {
             createnochoiceSampleTempFile();
+        }
+        String wtfPath = soundboardData.get(yoshiisland_wtf);
+        if (wtfPath == null || !new File(wtfPath).exists()) {
+            createwtfSampleTempFile();
         }
         String linksoundsPath = soundboardData.get(zelda_linksounds);
         if (linksoundsPath == null || !new File(linksoundsPath).exists()) {

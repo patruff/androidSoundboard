@@ -51,14 +51,14 @@ public class MainActivity extends AppCompatActivity {
     // list of static variables
 
     // testing part 1 below
-
-    public static final String americanpsycho_yalethingmp3 = "a mp3yalething";
-
     public static final String aliens_gameover = "a gameover";
     public static final String aliens_getaway = "a getaway";
     public static final String americanpsycho_yalething = "a yalething";
 
+
+    public static final String armageddon_backupplan = "a backupplan";
     public static final String armageddon_nonukes = "a nonukes";
+    public static final String armageddon_solarwinds = "a solarwinds";
     public static final String armageddon_whitehouse = "a whitehouse";
     public static final String backtofuture2_kidsmarty = "b kidsmarty";
     public static final String backtofuture_thinkmcfly = "b thinkmcfly";
@@ -84,29 +84,73 @@ public class MainActivity extends AppCompatActivity {
     public static final String diehard_hohoho = "d hohoho";
     public static final String diehard_oops = "d oops";
     public static final String donniedarko_suckafuck = "d suckafuck";
+    public static final String et_homephone = "e homephone";
+    public static final String et_ouch = "e ouch";
+    public static final String faceoff_faceoff = "f faceoff";
+    public static final String fifthelement_multipass = "f multipass";
     public static final String fifthelement_whocares = "f whocares";
     public static final String fzero_falconpunch = "f falconpunch";
+    public static final String gattaca_swimback = "g swimback";
+    public static final String gattaca_whatsyournumber = "g whatsyournumber";
     public static final String ghostbusters_nodick = "g nodick";
     public static final String glengarry_helpus = "g helpus";
     public static final String glengarry_leads = "g leads";
     public static final String happygilmore_pricewrong = "h pricewrong";
+    public static final String heat_30seconds = "h 30seconds";
+    public static final String heat_greatass = "h greatass";
+    public static final String heavyweights_doittoitlars = "h doittoitlars";
+    public static final String heavyweights_lackofhustle = "h lackofhustle";
+    public static final String indendenceday_welcometoearth = "i welcometoearth";
+    public static final String indianacrusade_chosepoorly = "i chosepoorly";
+    public static final String indianatemple_dontdrink = "i dontdrink";
+    public static final String indianatemple_poisonyoudrank = "i poisonyoudrank";
+    public static final String itsawonderfullife_joseph = "i joseph";
+    public static final String itsawonderfullife_mary = "i mary";
     public static final String jackson_whosbad = "j whosbad";
+    public static final String jurassicpark_hellojohn = "j hellojohn";
+    public static final String jurassicpark_wehavetrex = "j wehavetrex";
     public static final String karatekid_bestaround = "k bestaround";
     public static final String kindergartencop_shutup = "k shutup";
     public static final String kindergartencop_stopit = "k stopit";
     public static final String kindergartencop_tuma = "k tuma";
+    public static final String labrynth_notfair = "l notfair";
     public static final String labrynth_tobyslave = "l tobyslave";
+    public static final String lastofthemohicans_masteroflife = "l masteroflife";
+    public static final String lastofthemohicans_mogwaenglish = "l mogwaenglish";
     public static final String lastofthemohicans_takeme = "l takeme";
     public static final String legacyofkain_laugh = "l laugh";
     public static final String legacyofkain_vaevictus = "l vaevictus";
     public static final String livecrew_getitgirl = "l getitgirl";
+    public static final String lordoftherings_noothermaster = "l noothermaster";
+    public static final String lordoftherings_sharetheload = "l sharetheload";
+    public static final String matrix_airbreathing = "m airbreathing";
+    public static final String matrix_ignorancebliss = "m ignorancebliss";
     public static final String metallica_sowhat = "m sowhat";
     public static final String microsoft_giveitup = "m giveitup";
     public static final String moderntalking_winifyouwant = "m winifyouwant";
+    public static final String nationallampoonchristmas_grace = "n grace";
     public static final String network_getmad = "n getmad";
     public static final String network_lifevalue = "n lifevalue";
     public static final String neverendingstory_bastionyeah = "n bastionyeah";
+    public static final String newjackcity_brotherskeeper = "n brotherskeeper";
+    public static final String onceupontimewest_shyonehorse = "o shyonehorse";
     public static final String parappa_gottabelieve = "p gottabelieve";
+    public static final String pest_bigirritaterouneyes = "p bigirritaterouneyes";
+    public static final String pest_children = "p children";
+    public static final String pest_deergoose = "p deergoose";
+    public static final String pest_plindatthetime = "p plindatthetime";
+    public static final String pest_telepathy = "p telepathy";
+    public static final String quickandthedead_mytown = "q mytown";
+    public static final String rambo_badtimeforeveryone = "r badtimeforeveryone";
+    public static final String rambo_comebacktotheworld = "r comebacktotheworld";
+    public static final String rambo_icouldflyagunship = "r icouldflyagunship";
+    public static final String rambo_legs = "r legs";
+    public static final String rambo_longspeech = "r longspeech";
+    public static final String rambo_nobodyhelp = "r nobodyhelp";
+    public static final String rambo_nothingisover = "r nothingisover";
+    public static final String rambo_overjohnny = "r overjohnny";
+    public static final String rambo_parkingcars = "r parkingcars";
+    public static final String rambo_wasntmywar = "r wasntmywar";
     public static final String runningman_plainzero = "r plainzero";
     public static final String runningman_roomfist = "r roomfist";
     public static final String scentofwoman_outoforder = "s outoforder";
@@ -123,14 +167,23 @@ public class MainActivity extends AppCompatActivity {
     public static final String streetfigther2_knockout = "s knockout";
     public static final String terminator2_boots = "t boots";
     public static final String terminator_fooker = "t fooker";
+    public static final String tmnt_lostsai = "t lostsai";
     public static final String transformers_idiotstarscream = "t idiotstarscream";
     public static final String transformers_megatronstopped = "t megatronstopped";
     public static final String transformers_ripoutoptics = "t ripoutoptics";
+    public static final String twins_notidentical = "t notidentical";
+    public static final String twins_yourbrother = "t yourbrother";
+    public static final String unclebuck_badteachspeech = "u badteachspeech";
+    public static final String unclebuck_mcquestions = "u mcquestions";
+    public static final String vforvendetta_remember5th = "v remember5th";
     public static final String walken_cowbellpants = "w cowbellpants";
     public static final String whycant_whycantwebe = "w whycantwebe";
     public static final String willywonka_youlose = "w youlose";
     public static final String wwf_ricflair = "w ricflair";
+    public static final String xmen_empirewilllive = "x empirewilllive";
+    public static final String xmen_leadersweak = "x leadersweak";
     public static final String xmen_nochoice = "x nochoice";
+    public static final String yoshiisland_wtf = "y wtf";
     public static final String zelda_linksounds = "z linksounds";
 
     // other variables
@@ -494,9 +547,17 @@ public class MainActivity extends AppCompatActivity {
         if (yalethingPath == null || !new File(yalethingPath).exists()) {
             createyalethingSampleTempFile();
         }
+        String backupplanPath = soundboardData.get(armageddon_backupplan);
+        if (backupplanPath == null || !new File(backupplanPath).exists()) {
+            createbackupplanSampleTempFile();
+        }
         String nonukesPath = soundboardData.get(armageddon_nonukes);
         if (nonukesPath == null || !new File(nonukesPath).exists()) {
             createnonukesSampleTempFile();
+        }
+        String solarwindsPath = soundboardData.get(armageddon_solarwinds);
+        if (solarwindsPath == null || !new File(solarwindsPath).exists()) {
+            createsolarwindsSampleTempFile();
         }
         String whitehousePath = soundboardData.get(armageddon_whitehouse);
         if (whitehousePath == null || !new File(whitehousePath).exists()) {
@@ -598,6 +659,22 @@ public class MainActivity extends AppCompatActivity {
         if (suckafuckPath == null || !new File(suckafuckPath).exists()) {
             createsuckafuckSampleTempFile();
         }
+        String homephonePath = soundboardData.get(et_homephone);
+        if (homephonePath == null || !new File(homephonePath).exists()) {
+            createhomephoneSampleTempFile();
+        }
+        String ouchPath = soundboardData.get(et_ouch);
+        if (ouchPath == null || !new File(ouchPath).exists()) {
+            createouchSampleTempFile();
+        }
+        String faceoffPath = soundboardData.get(faceoff_faceoff);
+        if (faceoffPath == null || !new File(faceoffPath).exists()) {
+            createfaceoffSampleTempFile();
+        }
+        String multipassPath = soundboardData.get(fifthelement_multipass);
+        if (multipassPath == null || !new File(multipassPath).exists()) {
+            createmultipassSampleTempFile();
+        }
         String whocaresPath = soundboardData.get(fifthelement_whocares);
         if (whocaresPath == null || !new File(whocaresPath).exists()) {
             createwhocaresSampleTempFile();
@@ -605,6 +682,14 @@ public class MainActivity extends AppCompatActivity {
         String falconpunchPath = soundboardData.get(fzero_falconpunch);
         if (falconpunchPath == null || !new File(falconpunchPath).exists()) {
             createfalconpunchSampleTempFile();
+        }
+        String swimbackPath = soundboardData.get(gattaca_swimback);
+        if (swimbackPath == null || !new File(swimbackPath).exists()) {
+            createswimbackSampleTempFile();
+        }
+        String whatsyournumberPath = soundboardData.get(gattaca_whatsyournumber);
+        if (whatsyournumberPath == null || !new File(whatsyournumberPath).exists()) {
+            createwhatsyournumberSampleTempFile();
         }
         String nodickPath = soundboardData.get(ghostbusters_nodick);
         if (nodickPath == null || !new File(nodickPath).exists()) {
@@ -622,9 +707,57 @@ public class MainActivity extends AppCompatActivity {
         if (pricewrongPath == null || !new File(pricewrongPath).exists()) {
             createpricewrongSampleTempFile();
         }
+        String thirtysecondsPath = soundboardData.get(heat_30seconds);
+        if (thirtysecondsPath == null || !new File(thirtysecondsPath).exists()) {
+            create30secondsSampleTempFile();
+        }
+        String greatassPath = soundboardData.get(heat_greatass);
+        if (greatassPath == null || !new File(greatassPath).exists()) {
+            creategreatassSampleTempFile();
+        }
+        String doittoitlarsPath = soundboardData.get(heavyweights_doittoitlars);
+        if (doittoitlarsPath == null || !new File(doittoitlarsPath).exists()) {
+            createdoittoitlarsSampleTempFile();
+        }
+        String lackofhustlePath = soundboardData.get(heavyweights_lackofhustle);
+        if (lackofhustlePath == null || !new File(lackofhustlePath).exists()) {
+            createlackofhustleSampleTempFile();
+        }
+        String welcometoearthPath = soundboardData.get(indendenceday_welcometoearth);
+        if (welcometoearthPath == null || !new File(welcometoearthPath).exists()) {
+            createwelcometoearthSampleTempFile();
+        }
+        String chosepoorlyPath = soundboardData.get(indianacrusade_chosepoorly);
+        if (chosepoorlyPath == null || !new File(chosepoorlyPath).exists()) {
+            createchosepoorlySampleTempFile();
+        }
+        String dontdrinkPath = soundboardData.get(indianatemple_dontdrink);
+        if (dontdrinkPath == null || !new File(dontdrinkPath).exists()) {
+            createdontdrinkSampleTempFile();
+        }
+        String poisonyoudrankPath = soundboardData.get(indianatemple_poisonyoudrank);
+        if (poisonyoudrankPath == null || !new File(poisonyoudrankPath).exists()) {
+            createpoisonyoudrankSampleTempFile();
+        }
+        String josephPath = soundboardData.get(itsawonderfullife_joseph);
+        if (josephPath == null || !new File(josephPath).exists()) {
+            createjosephSampleTempFile();
+        }
+        String maryPath = soundboardData.get(itsawonderfullife_mary);
+        if (maryPath == null || !new File(maryPath).exists()) {
+            createmarySampleTempFile();
+        }
         String whosbadPath = soundboardData.get(jackson_whosbad);
         if (whosbadPath == null || !new File(whosbadPath).exists()) {
             createwhosbadSampleTempFile();
+        }
+        String hellojohnPath = soundboardData.get(jurassicpark_hellojohn);
+        if (hellojohnPath == null || !new File(hellojohnPath).exists()) {
+            createhellojohnSampleTempFile();
+        }
+        String wehavetrexPath = soundboardData.get(jurassicpark_wehavetrex);
+        if (wehavetrexPath == null || !new File(wehavetrexPath).exists()) {
+            createwehavetrexSampleTempFile();
         }
         String bestaroundPath = soundboardData.get(karatekid_bestaround);
         if (bestaroundPath == null || !new File(bestaroundPath).exists()) {
@@ -642,9 +775,21 @@ public class MainActivity extends AppCompatActivity {
         if (tumaPath == null || !new File(tumaPath).exists()) {
             createtumaSampleTempFile();
         }
+        String notfairPath = soundboardData.get(labrynth_notfair);
+        if (notfairPath == null || !new File(notfairPath).exists()) {
+            createnotfairSampleTempFile();
+        }
         String tobyslavePath = soundboardData.get(labrynth_tobyslave);
         if (tobyslavePath == null || !new File(tobyslavePath).exists()) {
             createtobyslaveSampleTempFile();
+        }
+        String masteroflifePath = soundboardData.get(lastofthemohicans_masteroflife);
+        if (masteroflifePath == null || !new File(masteroflifePath).exists()) {
+            createmasteroflifeSampleTempFile();
+        }
+        String mogwaenglishPath = soundboardData.get(lastofthemohicans_mogwaenglish);
+        if (mogwaenglishPath == null || !new File(mogwaenglishPath).exists()) {
+            createmogwaenglishSampleTempFile();
         }
         String takemePath = soundboardData.get(lastofthemohicans_takeme);
         if (takemePath == null || !new File(takemePath).exists()) {
@@ -662,6 +807,22 @@ public class MainActivity extends AppCompatActivity {
         if (getitgirlPath == null || !new File(getitgirlPath).exists()) {
             creategetitgirlSampleTempFile();
         }
+        String noothermasterPath = soundboardData.get(lordoftherings_noothermaster);
+        if (noothermasterPath == null || !new File(noothermasterPath).exists()) {
+            createnoothermasterSampleTempFile();
+        }
+        String sharetheloadPath = soundboardData.get(lordoftherings_sharetheload);
+        if (sharetheloadPath == null || !new File(sharetheloadPath).exists()) {
+            createsharetheloadSampleTempFile();
+        }
+        String airbreathingPath = soundboardData.get(matrix_airbreathing);
+        if (airbreathingPath == null || !new File(airbreathingPath).exists()) {
+            createairbreathingSampleTempFile();
+        }
+        String ignoranceblissPath = soundboardData.get(matrix_ignorancebliss);
+        if (ignoranceblissPath == null || !new File(ignoranceblissPath).exists()) {
+            createignoranceblissSampleTempFile();
+        }
         String sowhatPath = soundboardData.get(metallica_sowhat);
         if (sowhatPath == null || !new File(sowhatPath).exists()) {
             createsowhatSampleTempFile();
@@ -673,6 +834,10 @@ public class MainActivity extends AppCompatActivity {
         String winifyouwantPath = soundboardData.get(moderntalking_winifyouwant);
         if (winifyouwantPath == null || !new File(winifyouwantPath).exists()) {
             createwinifyouwantSampleTempFile();
+        }
+        String gracePath = soundboardData.get(nationallampoonchristmas_grace);
+        if (gracePath == null || !new File(gracePath).exists()) {
+            creategraceSampleTempFile();
         }
         String getmadPath = soundboardData.get(network_getmad);
         if (getmadPath == null || !new File(getmadPath).exists()) {
@@ -686,9 +851,81 @@ public class MainActivity extends AppCompatActivity {
         if (bastionyeahPath == null || !new File(bastionyeahPath).exists()) {
             createbastionyeahSampleTempFile();
         }
+        String brotherskeeperPath = soundboardData.get(newjackcity_brotherskeeper);
+        if (brotherskeeperPath == null || !new File(brotherskeeperPath).exists()) {
+            createbrotherskeeperSampleTempFile();
+        }
+        String shyonehorsePath = soundboardData.get(onceupontimewest_shyonehorse);
+        if (shyonehorsePath == null || !new File(shyonehorsePath).exists()) {
+            createshyonehorseSampleTempFile();
+        }
         String gottabelievePath = soundboardData.get(parappa_gottabelieve);
         if (gottabelievePath == null || !new File(gottabelievePath).exists()) {
             creategottabelieveSampleTempFile();
+        }
+        String bigirritaterouneyesPath = soundboardData.get(pest_bigirritaterouneyes);
+        if (bigirritaterouneyesPath == null || !new File(bigirritaterouneyesPath).exists()) {
+            createbigirritaterouneyesSampleTempFile();
+        }
+        String childrenPath = soundboardData.get(pest_children);
+        if (childrenPath == null || !new File(childrenPath).exists()) {
+            createchildrenSampleTempFile();
+        }
+        String deergoosePath = soundboardData.get(pest_deergoose);
+        if (deergoosePath == null || !new File(deergoosePath).exists()) {
+            createdeergooseSampleTempFile();
+        }
+        String plindatthetimePath = soundboardData.get(pest_plindatthetime);
+        if (plindatthetimePath == null || !new File(plindatthetimePath).exists()) {
+            createplindatthetimeSampleTempFile();
+        }
+        String telepathyPath = soundboardData.get(pest_telepathy);
+        if (telepathyPath == null || !new File(telepathyPath).exists()) {
+            createtelepathySampleTempFile();
+        }
+        String mytownPath = soundboardData.get(quickandthedead_mytown);
+        if (mytownPath == null || !new File(mytownPath).exists()) {
+            createmytownSampleTempFile();
+        }
+        String badtimeforeveryonePath = soundboardData.get(rambo_badtimeforeveryone);
+        if (badtimeforeveryonePath == null || !new File(badtimeforeveryonePath).exists()) {
+            createbadtimeforeveryoneSampleTempFile();
+        }
+        String comebacktotheworldPath = soundboardData.get(rambo_comebacktotheworld);
+        if (comebacktotheworldPath == null || !new File(comebacktotheworldPath).exists()) {
+            createcomebacktotheworldSampleTempFile();
+        }
+        String icouldflyagunshipPath = soundboardData.get(rambo_icouldflyagunship);
+        if (icouldflyagunshipPath == null || !new File(icouldflyagunshipPath).exists()) {
+            createicouldflyagunshipSampleTempFile();
+        }
+        String legsPath = soundboardData.get(rambo_legs);
+        if (legsPath == null || !new File(legsPath).exists()) {
+            createlegsSampleTempFile();
+        }
+        String longspeechPath = soundboardData.get(rambo_longspeech);
+        if (longspeechPath == null || !new File(longspeechPath).exists()) {
+            createlongspeechSampleTempFile();
+        }
+        String nobodyhelpPath = soundboardData.get(rambo_nobodyhelp);
+        if (nobodyhelpPath == null || !new File(nobodyhelpPath).exists()) {
+            createnobodyhelpSampleTempFile();
+        }
+        String nothingisoverPath = soundboardData.get(rambo_nothingisover);
+        if (nothingisoverPath == null || !new File(nothingisoverPath).exists()) {
+            createnothingisoverSampleTempFile();
+        }
+        String overjohnnyPath = soundboardData.get(rambo_overjohnny);
+        if (overjohnnyPath == null || !new File(overjohnnyPath).exists()) {
+            createoverjohnnySampleTempFile();
+        }
+        String parkingcarsPath = soundboardData.get(rambo_parkingcars);
+        if (parkingcarsPath == null || !new File(parkingcarsPath).exists()) {
+            createparkingcarsSampleTempFile();
+        }
+        String wasntmywarPath = soundboardData.get(rambo_wasntmywar);
+        if (wasntmywarPath == null || !new File(wasntmywarPath).exists()) {
+            createwasntmywarSampleTempFile();
         }
         String plainzeroPath = soundboardData.get(runningman_plainzero);
         if (plainzeroPath == null || !new File(plainzeroPath).exists()) {
@@ -754,6 +991,10 @@ public class MainActivity extends AppCompatActivity {
         if (fookerPath == null || !new File(fookerPath).exists()) {
             createfookerSampleTempFile();
         }
+        String lostsaiPath = soundboardData.get(tmnt_lostsai);
+        if (lostsaiPath == null || !new File(lostsaiPath).exists()) {
+            createlostsaiSampleTempFile();
+        }
         String idiotstarscreamPath = soundboardData.get(transformers_idiotstarscream);
         if (idiotstarscreamPath == null || !new File(idiotstarscreamPath).exists()) {
             createidiotstarscreamSampleTempFile();
@@ -765,6 +1006,26 @@ public class MainActivity extends AppCompatActivity {
         String ripoutopticsPath = soundboardData.get(transformers_ripoutoptics);
         if (ripoutopticsPath == null || !new File(ripoutopticsPath).exists()) {
             createripoutopticsSampleTempFile();
+        }
+        String notidenticalPath = soundboardData.get(twins_notidentical);
+        if (notidenticalPath == null || !new File(notidenticalPath).exists()) {
+            createnotidenticalSampleTempFile();
+        }
+        String yourbrotherPath = soundboardData.get(twins_yourbrother);
+        if (yourbrotherPath == null || !new File(yourbrotherPath).exists()) {
+            createyourbrotherSampleTempFile();
+        }
+        String badteachspeechPath = soundboardData.get(unclebuck_badteachspeech);
+        if (badteachspeechPath == null || !new File(badteachspeechPath).exists()) {
+            createbadteachspeechSampleTempFile();
+        }
+        String mcquestionsPath = soundboardData.get(unclebuck_mcquestions);
+        if (mcquestionsPath == null || !new File(mcquestionsPath).exists()) {
+            createmcquestionsSampleTempFile();
+        }
+        String remember5thPath = soundboardData.get(vforvendetta_remember5th);
+        if (remember5thPath == null || !new File(remember5thPath).exists()) {
+            createremember5thSampleTempFile();
         }
         String cowbellpantsPath = soundboardData.get(walken_cowbellpants);
         if (cowbellpantsPath == null || !new File(cowbellpantsPath).exists()) {
@@ -782,9 +1043,21 @@ public class MainActivity extends AppCompatActivity {
         if (ricflairPath == null || !new File(ricflairPath).exists()) {
             createricflairSampleTempFile();
         }
+        String empirewilllivePath = soundboardData.get(xmen_empirewilllive);
+        if (empirewilllivePath == null || !new File(empirewilllivePath).exists()) {
+            createempirewillliveSampleTempFile();
+        }
+        String leadersweakPath = soundboardData.get(xmen_leadersweak);
+        if (leadersweakPath == null || !new File(leadersweakPath).exists()) {
+            createleadersweakSampleTempFile();
+        }
         String nochoicePath = soundboardData.get(xmen_nochoice);
         if (nochoicePath == null || !new File(nochoicePath).exists()) {
             createnochoiceSampleTempFile();
+        }
+        String wtfPath = soundboardData.get(yoshiisland_wtf);
+        if (wtfPath == null || !new File(wtfPath).exists()) {
+            createwtfSampleTempFile();
         }
         String linksoundsPath = soundboardData.get(zelda_linksounds);
         if (linksoundsPath == null || !new File(linksoundsPath).exists()) {
@@ -851,6 +1124,24 @@ public class MainActivity extends AppCompatActivity {
             Log.w(TAG, "Unable to create tmp file!", e);
         }
     }
+    private void createbackupplanSampleTempFile() {
+        try {
+            File file = File.createTempFile("armageddon_backupplan", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.armageddon_backupplan);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(armageddon_backupplan, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
     private void createnonukesSampleTempFile() {
         try {
             File file = File.createTempFile("armageddon_nonukes", "mp3", getCacheDir());
@@ -861,6 +1152,24 @@ public class MainActivity extends AppCompatActivity {
                 in.close();
 
                 soundboardData.put(armageddon_nonukes, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createsolarwindsSampleTempFile() {
+        try {
+            File file = File.createTempFile("armageddon_solarwinds", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.armageddon_solarwinds);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(armageddon_solarwinds, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -1319,6 +1628,78 @@ public class MainActivity extends AppCompatActivity {
             Log.w(TAG, "Unable to create tmp file!", e);
         }
     }
+    private void createhomephoneSampleTempFile() {
+        try {
+            File file = File.createTempFile("et_homephone", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.et_homephone);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(et_homephone, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createouchSampleTempFile() {
+        try {
+            File file = File.createTempFile("et_ouch", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.et_ouch);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(et_ouch, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createfaceoffSampleTempFile() {
+        try {
+            File file = File.createTempFile("faceoff_faceoff", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.faceoff_faceoff);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(faceoff_faceoff, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createmultipassSampleTempFile() {
+        try {
+            File file = File.createTempFile("fifthelement_multipass", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.fifthelement_multipass);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(fifthelement_multipass, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
     private void createwhocaresSampleTempFile() {
         try {
             File file = File.createTempFile("fifthelement_whocares", "mp3", getCacheDir());
@@ -1347,6 +1728,42 @@ public class MainActivity extends AppCompatActivity {
                 in.close();
 
                 soundboardData.put(fzero_falconpunch, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createswimbackSampleTempFile() {
+        try {
+            File file = File.createTempFile("gattaca_swimback", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.gattaca_swimback);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(gattaca_swimback, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createwhatsyournumberSampleTempFile() {
+        try {
+            File file = File.createTempFile("gattaca_whatsyournumber", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.gattaca_whatsyournumber);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(gattaca_whatsyournumber, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -1427,6 +1844,186 @@ public class MainActivity extends AppCompatActivity {
             Log.w(TAG, "Unable to create tmp file!", e);
         }
     }
+    private void create30secondsSampleTempFile() {
+        try {
+            File file = File.createTempFile("heat_30seconds", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.heat_30seconds);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(heat_30seconds, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void creategreatassSampleTempFile() {
+        try {
+            File file = File.createTempFile("heat_greatass", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.heat_greatass);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(heat_greatass, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createdoittoitlarsSampleTempFile() {
+        try {
+            File file = File.createTempFile("heavyweights_doittoitlars", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.heavyweights_doittoitlars);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(heavyweights_doittoitlars, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createlackofhustleSampleTempFile() {
+        try {
+            File file = File.createTempFile("heavyweights_lackofhustle", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.heavyweights_lackofhustle);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(heavyweights_lackofhustle, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createwelcometoearthSampleTempFile() {
+        try {
+            File file = File.createTempFile("indendenceday_welcometoearth", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.indendenceday_welcometoearth);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(indendenceday_welcometoearth, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createchosepoorlySampleTempFile() {
+        try {
+            File file = File.createTempFile("indianacrusade_chosepoorly", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.indianacrusade_chosepoorly);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(indianacrusade_chosepoorly, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createdontdrinkSampleTempFile() {
+        try {
+            File file = File.createTempFile("indianatemple_dontdrink", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.indianatemple_dontdrink);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(indianatemple_dontdrink, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createpoisonyoudrankSampleTempFile() {
+        try {
+            File file = File.createTempFile("indianatemple_poisonyoudrank", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.indianatemple_poisonyoudrank);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(indianatemple_poisonyoudrank, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createjosephSampleTempFile() {
+        try {
+            File file = File.createTempFile("itsawonderfullife_joseph", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.itsawonderfullife_joseph);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(itsawonderfullife_joseph, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createmarySampleTempFile() {
+        try {
+            File file = File.createTempFile("itsawonderfullife_mary", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.itsawonderfullife_mary);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(itsawonderfullife_mary, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
     private void createwhosbadSampleTempFile() {
         try {
             File file = File.createTempFile("jackson_whosbad", "mp3", getCacheDir());
@@ -1437,6 +2034,42 @@ public class MainActivity extends AppCompatActivity {
                 in.close();
 
                 soundboardData.put(jackson_whosbad, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createhellojohnSampleTempFile() {
+        try {
+            File file = File.createTempFile("jurassicpark_hellojohn", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.jurassicpark_hellojohn);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(jurassicpark_hellojohn, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createwehavetrexSampleTempFile() {
+        try {
+            File file = File.createTempFile("jurassicpark_wehavetrex", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.jurassicpark_wehavetrex);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(jurassicpark_wehavetrex, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -1517,6 +2150,24 @@ public class MainActivity extends AppCompatActivity {
             Log.w(TAG, "Unable to create tmp file!", e);
         }
     }
+    private void createnotfairSampleTempFile() {
+        try {
+            File file = File.createTempFile("labrynth_notfair", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.labrynth_notfair);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(labrynth_notfair, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
     private void createtobyslaveSampleTempFile() {
         try {
             File file = File.createTempFile("labrynth_tobyslave", "mp3", getCacheDir());
@@ -1527,6 +2178,42 @@ public class MainActivity extends AppCompatActivity {
                 in.close();
 
                 soundboardData.put(labrynth_tobyslave, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createmasteroflifeSampleTempFile() {
+        try {
+            File file = File.createTempFile("lastofthemohicans_masteroflife", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.lastofthemohicans_masteroflife);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(lastofthemohicans_masteroflife, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createmogwaenglishSampleTempFile() {
+        try {
+            File file = File.createTempFile("lastofthemohicans_mogwaenglish", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.lastofthemohicans_mogwaenglish);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(lastofthemohicans_mogwaenglish, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -1607,6 +2294,78 @@ public class MainActivity extends AppCompatActivity {
             Log.w(TAG, "Unable to create tmp file!", e);
         }
     }
+    private void createnoothermasterSampleTempFile() {
+        try {
+            File file = File.createTempFile("lordoftherings_noothermaster", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.lordoftherings_noothermaster);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(lordoftherings_noothermaster, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createsharetheloadSampleTempFile() {
+        try {
+            File file = File.createTempFile("lordoftherings_sharetheload", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.lordoftherings_sharetheload);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(lordoftherings_sharetheload, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createairbreathingSampleTempFile() {
+        try {
+            File file = File.createTempFile("matrix_airbreathing", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.matrix_airbreathing);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(matrix_airbreathing, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createignoranceblissSampleTempFile() {
+        try {
+            File file = File.createTempFile("matrix_ignorancebliss", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.matrix_ignorancebliss);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(matrix_ignorancebliss, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
     private void createsowhatSampleTempFile() {
         try {
             File file = File.createTempFile("metallica_sowhat", "mp3", getCacheDir());
@@ -1661,6 +2420,24 @@ public class MainActivity extends AppCompatActivity {
             Log.w(TAG, "Unable to create tmp file!", e);
         }
     }
+    private void creategraceSampleTempFile() {
+        try {
+            File file = File.createTempFile("nationallampoonchristmas_grace", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.nationallampoonchristmas_grace);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(nationallampoonchristmas_grace, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
     private void creategetmadSampleTempFile() {
         try {
             File file = File.createTempFile("network_getmad", "mp3", getCacheDir());
@@ -1679,6 +2456,7 @@ public class MainActivity extends AppCompatActivity {
             Log.w(TAG, "Unable to create tmp file!", e);
         }
     }
+
     private void createlifevalueSampleTempFile() {
         try {
             File file = File.createTempFile("network_lifevalue", "mp3", getCacheDir());
@@ -1715,6 +2493,42 @@ public class MainActivity extends AppCompatActivity {
             Log.w(TAG, "Unable to create tmp file!", e);
         }
     }
+    private void createbrotherskeeperSampleTempFile() {
+        try {
+            File file = File.createTempFile("newjackcity_brotherskeeper", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.newjackcity_brotherskeeper);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(newjackcity_brotherskeeper, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createshyonehorseSampleTempFile() {
+        try {
+            File file = File.createTempFile("onceupontimewest_shyonehorse", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.onceupontimewest_shyonehorse);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(onceupontimewest_shyonehorse, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
     private void creategottabelieveSampleTempFile() {
         try {
             File file = File.createTempFile("parappa_gottabelieve", "mp3", getCacheDir());
@@ -1725,6 +2539,294 @@ public class MainActivity extends AppCompatActivity {
                 in.close();
 
                 soundboardData.put(parappa_gottabelieve, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createbigirritaterouneyesSampleTempFile() {
+        try {
+            File file = File.createTempFile("pest_bigirritaterouneyes", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.pest_bigirritaterouneyes);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(pest_bigirritaterouneyes, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createchildrenSampleTempFile() {
+        try {
+            File file = File.createTempFile("pest_children", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.pest_children);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(pest_children, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createdeergooseSampleTempFile() {
+        try {
+            File file = File.createTempFile("pest_deergoose", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.pest_deergoose);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(pest_deergoose, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createplindatthetimeSampleTempFile() {
+        try {
+            File file = File.createTempFile("pest_plindatthetime", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.pest_plindatthetime);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(pest_plindatthetime, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createtelepathySampleTempFile() {
+        try {
+            File file = File.createTempFile("pest_telepathy", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.pest_telepathy);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(pest_telepathy, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createmytownSampleTempFile() {
+        try {
+            File file = File.createTempFile("quickandthedead_mytown", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.quickandthedead_mytown);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(quickandthedead_mytown, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createbadtimeforeveryoneSampleTempFile() {
+        try {
+            File file = File.createTempFile("rambo_badtimeforeveryone", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.rambo_badtimeforeveryone);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(rambo_badtimeforeveryone, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createcomebacktotheworldSampleTempFile() {
+        try {
+            File file = File.createTempFile("rambo_comebacktotheworld", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.rambo_comebacktotheworld);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(rambo_comebacktotheworld, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createicouldflyagunshipSampleTempFile() {
+        try {
+            File file = File.createTempFile("rambo_icouldflyagunship", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.rambo_icouldflyagunship);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(rambo_icouldflyagunship, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createlegsSampleTempFile() {
+        try {
+            File file = File.createTempFile("rambo_legs", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.rambo_legs);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(rambo_legs, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createlongspeechSampleTempFile() {
+        try {
+            File file = File.createTempFile("rambo_longspeech", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.rambo_longspeech);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(rambo_longspeech, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createnobodyhelpSampleTempFile() {
+        try {
+            File file = File.createTempFile("rambo_nobodyhelp", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.rambo_nobodyhelp);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(rambo_nobodyhelp, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createnothingisoverSampleTempFile() {
+        try {
+            File file = File.createTempFile("rambo_nothingisover", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.rambo_nothingisover);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(rambo_nothingisover, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createoverjohnnySampleTempFile() {
+        try {
+            File file = File.createTempFile("rambo_overjohnny", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.rambo_overjohnny);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(rambo_overjohnny, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createparkingcarsSampleTempFile() {
+        try {
+            File file = File.createTempFile("rambo_parkingcars", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.rambo_parkingcars);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(rambo_parkingcars, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createwasntmywarSampleTempFile() {
+        try {
+            File file = File.createTempFile("rambo_wasntmywar", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.rambo_wasntmywar);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(rambo_wasntmywar, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -2021,6 +3123,24 @@ public class MainActivity extends AppCompatActivity {
             Log.w(TAG, "Unable to create tmp file!", e);
         }
     }
+    private void createlostsaiSampleTempFile() {
+        try {
+            File file = File.createTempFile("tmnt_lostsai", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.tmnt_lostsai);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(tmnt_lostsai, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
     private void createidiotstarscreamSampleTempFile() {
         try {
             File file = File.createTempFile("transformers_idiotstarscream", "mp3", getCacheDir());
@@ -2067,6 +3187,96 @@ public class MainActivity extends AppCompatActivity {
                 in.close();
 
                 soundboardData.put(transformers_ripoutoptics, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createnotidenticalSampleTempFile() {
+        try {
+            File file = File.createTempFile("twins_notidentical", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.twins_notidentical);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(twins_notidentical, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createyourbrotherSampleTempFile() {
+        try {
+            File file = File.createTempFile("twins_yourbrother", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.twins_yourbrother);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(twins_yourbrother, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createbadteachspeechSampleTempFile() {
+        try {
+            File file = File.createTempFile("unclebuck_badteachspeech", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.unclebuck_badteachspeech);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(unclebuck_badteachspeech, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createmcquestionsSampleTempFile() {
+        try {
+            File file = File.createTempFile("unclebuck_mcquestions", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.unclebuck_mcquestions);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(unclebuck_mcquestions, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createremember5thSampleTempFile() {
+        try {
+            File file = File.createTempFile("vforvendetta_remember5th", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.vforvendetta_remember5th);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(vforvendetta_remember5th, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
@@ -2147,6 +3357,42 @@ public class MainActivity extends AppCompatActivity {
             Log.w(TAG, "Unable to create tmp file!", e);
         }
     }
+    private void createempirewillliveSampleTempFile() {
+        try {
+            File file = File.createTempFile("xmen_empirewilllive", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.xmen_empirewilllive);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(xmen_empirewilllive, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createleadersweakSampleTempFile() {
+        try {
+            File file = File.createTempFile("xmen_leadersweak", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.xmen_leadersweak);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(xmen_leadersweak, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
     private void createnochoiceSampleTempFile() {
         try {
             File file = File.createTempFile("xmen_nochoice", "mp3", getCacheDir());
@@ -2157,6 +3403,24 @@ public class MainActivity extends AppCompatActivity {
                 in.close();
 
                 soundboardData.put(xmen_nochoice, file.getPath());
+                saveSoundboardData();
+            } catch (IOException e) {
+                Log.w(TAG, "Unable to write tmp file!", e);
+            }
+        } catch (IOException e) {
+            Log.w(TAG, "Unable to create tmp file!", e);
+        }
+    }
+    private void createwtfSampleTempFile() {
+        try {
+            File file = File.createTempFile("yoshiisland_wtf", "mp3", getCacheDir());
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                InputStream in = getResources().openRawResource(R.raw.yoshiisland_wtf);
+                ByteStreams.copy(in, out);
+                out.flush();
+                in.close();
+
+                soundboardData.put(yoshiisland_wtf, file.getPath());
                 saveSoundboardData();
             } catch (IOException e) {
                 Log.w(TAG, "Unable to write tmp file!", e);
