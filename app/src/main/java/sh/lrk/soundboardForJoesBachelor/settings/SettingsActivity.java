@@ -1,10 +1,8 @@
-package sh.lrk.soundboard.settings;
+package sh.lrk.soundboardForJoesBachelor.settings;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Build;
@@ -12,21 +10,16 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.SwitchPreference;
-import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 
-import com.google.android.material.snackbar.Snackbar;
-
 import java.util.List;
 
-import sh.lrk.soundboard.R;
+import sh.lrk.soundboardForJoesBachelor.R;
 
 public class SettingsActivity extends AppCompatPreferenceActivity {
 

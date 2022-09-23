@@ -1,4 +1,4 @@
-package sh.lrk.soundboard;
+package sh.lrk.soundboardForJoesBachelor;
 
 import android.app.AlertDialog;
 import android.preference.PreferenceManager;
@@ -12,10 +12,10 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import static sh.lrk.soundboard.MainActivity.HIT;
-import static sh.lrk.soundboard.MainActivity.IT_JUST_WORKS;
-import static sh.lrk.soundboard.settings.SettingsActivity.DEFAULT_TEXT_SIZE;
-import static sh.lrk.soundboard.settings.SettingsActivity.KEY_TEXT_SIZE;
+import static sh.lrk.soundboardForJoesBachelor.MainActivity.HIT;
+import static sh.lrk.soundboardForJoesBachelor.MainActivity.IT_JUST_WORKS;
+import static sh.lrk.soundboardForJoesBachelor.settings.SettingsActivity.DEFAULT_TEXT_SIZE;
+import static sh.lrk.soundboardForJoesBachelor.settings.SettingsActivity.KEY_TEXT_SIZE;
 
 class SampleAdapter extends ArrayAdapter<SoundboardSample> {
 

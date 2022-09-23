@@ -1,4 +1,4 @@
-package sh.lrk.soundboard;
+package sh.lrk.soundboardForJoesBachelor;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -10,10 +10,10 @@ import android.widget.ImageButton;
 import java.io.File;
 import java.io.IOException;
 
-import static sh.lrk.soundboard.settings.SettingsActivity.DEFAULT_PLAY_IMMEDIATELY;
-import static sh.lrk.soundboard.settings.SettingsActivity.DEFAULT_STOP_PLAY;
-import static sh.lrk.soundboard.settings.SettingsActivity.KEY_PLAY_IMMEDIATELY;
-import static sh.lrk.soundboard.settings.SettingsActivity.KEY_STOP_PLAY;
+import static sh.lrk.soundboardForJoesBachelor.settings.SettingsActivity.DEFAULT_PLAY_IMMEDIATELY;
+import static sh.lrk.soundboardForJoesBachelor.settings.SettingsActivity.DEFAULT_STOP_PLAY;
+import static sh.lrk.soundboardForJoesBachelor.settings.SettingsActivity.KEY_PLAY_IMMEDIATELY;
+import static sh.lrk.soundboardForJoesBachelor.settings.SettingsActivity.KEY_STOP_PLAY;
 
 class PlaybackHandler {
 

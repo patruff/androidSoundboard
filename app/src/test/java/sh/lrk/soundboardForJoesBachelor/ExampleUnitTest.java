@@ -1,4 +1,4 @@
-package sh.lrk.soundboard;
+package sh.lrk.soundboardForJoesBachelor;
 
 import org.junit.Test;
 

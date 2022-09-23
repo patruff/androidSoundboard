@@ -1,4 +1,4 @@
-package sh.lrk.soundboard;
+package sh.lrk.soundboardForJoesBachelor;
 
 /*
 
@@ -30,7 +30,7 @@ import android.util.Log;
 
 import java.util.List;
 
-import static sh.lrk.soundboard.BuildConfig.DEBUG;
+import static sh.lrk.soundboardForJoesBachelor.BuildConfig.DEBUG;
 
 /**
  * @author Peli

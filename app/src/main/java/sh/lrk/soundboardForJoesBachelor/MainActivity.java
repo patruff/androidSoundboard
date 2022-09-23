@@ -1,8 +1,7 @@
-package sh.lrk.soundboard;
+package sh.lrk.soundboardForJoesBachelor;
 
 import android.Manifest;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -36,13 +35,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Set;
 
-import sh.lrk.soundboard.settings.SettingsActivity;
+import sh.lrk.soundboardForJoesBachelor.settings.SettingsActivity;
 
-import static sh.lrk.soundboard.settings.SettingsActivity.DEFAULT_NUM_COLS;
-import static sh.lrk.soundboard.settings.SettingsActivity.KEY_NUM_COLS;
+import static sh.lrk.soundboardForJoesBachelor.settings.SettingsActivity.DEFAULT_NUM_COLS;
+import static sh.lrk.soundboardForJoesBachelor.settings.SettingsActivity.KEY_NUM_COLS;
 
 public class MainActivity extends AppCompatActivity {
 

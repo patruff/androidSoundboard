@@ -1,4 +1,4 @@
-package sh.lrk.soundboard.settings;
+package sh.lrk.soundboardForJoesBachelor.settings;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
